@@ -19,7 +19,7 @@ export default async function Home() {
         background: `url(https://www.normareclamare.com/assets/images/background-home-01.jpg)`,
       }}
     >
-      <main className="flex flex-col p-12 bg-main/95 h-screen w-full lg:w-1/2">
+      <main className="flex flex-col p-12 bg-white/95 _bg-main/95 h-screen w-full lg:w-1/2">
         <Brand />
         <div className="flex-1" />
         <HelloWorld title={content?.title} description={content?.description} />
