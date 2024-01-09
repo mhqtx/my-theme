@@ -1,0 +1,27 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id String @id @default(cuid())
+  name String
+}
+
+model Main {
+  id String @id @default(cuid())
+  title String
+  description String
+  city String
+  address String
+}
+
+// npx prisma studio
+// npx prisma migrate dev

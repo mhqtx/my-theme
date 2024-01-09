@@ -1,4 +1,9 @@
-export default function Footer() {
+interface Props {
+  city: string | undefined;
+  address: string | undefined;
+}
+
+export default function Footer({ city, address }: Props) {
   return (
     <div className="flex mt-5 flex-col">
       <div className="flex space-x-1 flex-grow">
@@ -16,8 +21,8 @@ export default function Footer() {
         </div>
       </div>
       <div className="mt-2">
-        <h6 className="font-bold text-base">Belgrade, Serbia</h6>
-        <p className="text-sm">Krfska 26, Zvezdara</p>
+        <h6 className="font-bold text-base">{city}</h6>
+        <p className="text-sm">{address}</p>
       </div>
     </div>
   );
