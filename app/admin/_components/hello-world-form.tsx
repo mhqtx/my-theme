@@ -2,8 +2,8 @@
 
 import { Input } from "@nextui-org/react";
 import { Textarea } from "@nextui-org/react";
-import { Button } from "@nextui-org/react";
 import { updateHelloWorld } from "@/app/_server-actions";
+import { SubmitButton } from "@/app/admin/_components/submit-button";
 
 export function HelloWorldForm() {
   return (
@@ -23,9 +23,7 @@ export function HelloWorldForm() {
 
       <Input name="address" type="text" placeholder="Address" />
 
-      <Button color="primary" type="submit">
-        Button
-      </Button>
+      <SubmitButton />
     </form>
   );
 }
