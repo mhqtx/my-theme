@@ -14,14 +14,20 @@ export const updateHelloWorld = async (e: FormData) => {
   // use z to validate
   if (!title || !description || !city || !address) return;
 
-  await prisma.main.create({
-    data: {
-      title,
-      description,
-      city,
-      address,
-    },
-  });
+  try {
+    await prisma.main.create({
+      data: {
+        title,
+        description,
+        city,
+        address,
+      },
+    });
+  } catch (e) {
+    return {
+      e,
+    };
+  }
 
   revalidatePath("/about");
 };
