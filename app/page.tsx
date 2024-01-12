@@ -1,6 +1,8 @@
 // import { PrismaClient } from "@prisma/client";
 import { Hero } from "@/app/_components/hero";
 // import { Footer } from "@/app/_components/footer";
+import HeroBackground from "./_images/hero-background.jpg";
+import Image from "next/image";
 
 export default async function Home() {
   // const prisma = new PrismaClient();
@@ -11,15 +13,16 @@ export default async function Home() {
   // });
 
   return (
-    <div
-      className="bg-cover bg-no-repeat"
-      style={{
-        // TODO: srcSet with img
-        background: `url(https://www.normareclamare.com/assets/images/background-home-01.jpg)`,
-      }}
-    >
+    <>
       <Hero />
-      {/* <Footer /> */}
-    </div>
+      {/* TODO: use srcSet */}
+      <Image
+        alt="Hero wallpaper"
+        className="absolute top-0 left-0 w-full h-full object-cover object-top"
+        src={HeroBackground}
+        width={1920}
+        height={1277}
+      />
+    </>
   );
 }

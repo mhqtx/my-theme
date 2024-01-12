@@ -12,7 +12,7 @@ export async function Hero() {
   // });
 
   return (
-    <div className="flex justify-between flex-col p-12 bg-white/95 _bg-main/95 h-screen w-full lg:w-1/2">
+    <div className="relative z-10 flex justify-between flex-col p-12 bg-white/95 _bg-main/95 h-screen w-full lg:w-1/2">
       <Header />
       <Description />
       <Contact />
