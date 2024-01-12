@@ -1,4 +1,4 @@
-import Brand from "@/app/_components/brand";
+import Brand from "@/app/_components/hero/header";
 import { HelloWorldForm } from "@/app/admin/_components/hello-world-form";
 
 export default async function AdminPage() {

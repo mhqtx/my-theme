@@ -1,7 +1,7 @@
 import { Hamburger } from "@/app/_icons";
 import Image from "next/image";
 
-export default function Brand() {
+export default function Header() {
   return (
     <div className="flex justify-between w-full">
       <a
