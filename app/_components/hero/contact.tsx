@@ -6,7 +6,7 @@ export default function Contact() {
 
   return (
     <div className="flex mt-5 flex-col">
-      <h6 className="font-bold text-base mb-2">Get in touch:</h6>
+      <h6 className="font-bold text-base mb-2 text-black">Get in touch:</h6>
       <div className="flex space-x-1 flex-grow items-center ">
         {socials.map((icon) => (
           <a
