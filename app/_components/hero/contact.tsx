@@ -24,7 +24,7 @@ export default function Contact() {
         {icons.map((icon) => (
           <div
             key={icon.src}
-            className="shrink-0 rounded-full w-10 h-10 flex items-center justify-center text-white bg-black"
+            className="shrink-0 rounded-full w-10 h-10 flex items-center justify-center bg-black"
           >
             <Image
               alt={icon.alt}
