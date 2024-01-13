@@ -43,12 +43,12 @@ export async function generateMetadata(): Promise<Metadata> {
     openGraph: {
       // TODO: Add image to URL
       // images: [{ type: "image/svg", url: ... }],
-      locale: "en_US",
+      locale: "sr_RS",
       siteName: "MY-THEME",
       url: "https://www.my-theme.vercel.com",
     },
     other: {
-      locale: "en_US",
+      locale: "sr_RS",
       "msapplication-TileColor": "#000",
       "msapplication-navbutton-color": "#000",
       "msapplication-starturl": "https://www.my-theme.vercel.com",
