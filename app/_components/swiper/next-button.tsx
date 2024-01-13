@@ -9,7 +9,12 @@ import Image from "next/image";
 export function NextButton() {
   return (
     <div className={nextElClassName}>
-      <div className={c(gradientElClassName, "right-0 bg-gradient-to-l")} />
+      <div
+        className={c(
+          gradientElClassName,
+          "right-0 bg-gradient-to-l max-sm:hidden"
+        )}
+      />
       <button
         aria-label="Arrow next"
         className={c(navigationElClassName, "right-1")}
