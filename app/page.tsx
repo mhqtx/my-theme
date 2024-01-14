@@ -18,7 +18,7 @@ export default async function Home() {
   return (
     <>
       <Hero />
-      <Gallery />
+      {/* <Gallery />
       <div className="flex flex-col md:flex-row">
         <div className="w-1/2">radnov reme</div>
         <iframe
@@ -29,7 +29,7 @@ export default async function Home() {
           loading="lazy"
           referrerPolicy="no-referrer-when-downgrade"
         ></iframe>
-      </div>
+      </div> */}
       <Footer />
     </>
   );
