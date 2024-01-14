@@ -9,7 +9,13 @@ export function Footer() {
   const { title, description } = useContentHero();
 
   return (
-    <div className="w-full bg-black text-white p-2 lg:p-4">
+    <div
+      className="w-full bg-black text-white p-2 lg:p-4"
+      style={{
+        backgroundImage: "radial-gradient(rgb(40 39 39) 1px, rgb(0, 0, 0) 1px)",
+        backgroundSize: "40px 40px",
+      }}
+    >
       <div className="max-w-[1200px] mx-auto">
         <a
           className="pointer-events-none"
