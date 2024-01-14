@@ -56,7 +56,7 @@ export default function Nav() {
           href={`tel:${tel}`}
           target="_blank"
           rel="noopener noreferrer"
-          className="shrink-0 rounded-full w-10 h-10 flex items-center justify-center bg-black"
+          className="hidden lg:flex shrink-0 rounded-full px-2 h-10 items-center justify-center bg-black text-white space-x-1"
         >
           <Image
             alt=""
@@ -65,6 +65,7 @@ export default function Nav() {
             width={24}
             height={24}
           />
+          <span>{tel}</span>
         </a>
         <div className="text-black/10 mx-1">|</div>
         <button>

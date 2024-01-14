@@ -1,4 +1,4 @@
-import { Instagram, Viber, Whatsapp } from "@/app/_icons";
+import { Instagram, Phone, Viber, Whatsapp } from "@/app/_icons";
 
 export function useContentHero() {
   return {
@@ -24,6 +24,11 @@ export function useContentHero() {
         alt: "Viber",
         src: Viber,
         href: "viber://add?number=+381629630157",
+      },
+      {
+        alt: "Telephone",
+        src: Phone,
+        href: "tel:+381629630157",
       },
     ],
     tel: "+381629630157",
