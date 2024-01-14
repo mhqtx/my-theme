@@ -24,7 +24,7 @@ export default function Nav() {
     <div
       ref={ref}
       className={c(
-        `z-30 fixed top-0 items-center flex justify-between left-0 w-full text-right px-2 py-2`,
+        `transition-all	z-30 fixed top-0 items-center flex justify-between left-0 w-full text-right px-2 py-2`,
         {
           "bg-white py-2 px-2": isScrolledDown,
           "lg:px-6 lg:py-10": !isScrolledDown,
