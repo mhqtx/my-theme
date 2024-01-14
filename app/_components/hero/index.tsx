@@ -1,9 +1,10 @@
-import Contact from "@/app/_components/hero/contact";
+import Contact from "@/app/_components/socials";
 import Header from "@/app/_components/hero/header";
 // import { PrismaClient } from "@prisma/client";
 import Description from "@/app/_components/hero/description";
 import Image from "next/image";
 import HeroBackground from "../../_images/hero-background-2.jpg";
+import Socials from "@/app/_components/socials";
 
 export async function Hero() {
   // const prisma = new PrismaClient();
@@ -19,12 +20,13 @@ export async function Hero() {
         className="relative flex justify-between flex-col p-2 lg:p-12 h-screen w-full lg:w-1/2"
         style={{
           backgroundImage: "radial-gradient(#a9a9a9 1px, #ffffff 1px)",
-          backgroundSize: "36px 36px",
+          backgroundSize: "40px 40px",
         }}
       >
-        <div className="w-10 h-[22px]" />
+        {/* Placeholder for img */}
+        <div />
         <Description />
-        <Contact />
+        <Socials />
       </div>
       <div className="relative hidden lg:flex lg:w-1/2">
         <Image

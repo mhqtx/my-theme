@@ -5,6 +5,7 @@ import HeroBackground from "./_images/hero-background.jpg";
 import Image from "next/image";
 import { Swiper, SwiperSlide } from "@/app/_components/swiper";
 import { Gallery } from "@/app/_components/gallery";
+import { Footer } from "@/app/_components/footer";
 
 export default async function Home() {
   // const prisma = new PrismaClient();
@@ -29,6 +30,7 @@ export default async function Home() {
           referrerPolicy="no-referrer-when-downgrade"
         ></iframe>
       </div>
+      <Footer />
     </>
   );
 }
