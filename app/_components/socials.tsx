@@ -1,7 +1,8 @@
+import { twMerge } from "tailwind-merge";
 import { useContentHero } from "@/app/_content/hero";
 import Image from "next/image";
 
-export default function Socials() {
+export default function Socials({ iconWrapperClassName }) {
   const { socials } = useContentHero();
 
   return (
@@ -13,7 +14,10 @@ export default function Socials() {
           target="_blank"
           rel="noopener noreferrer"
           // TODO: Use twMerge
-          className="shrink-0 rounded-full w-10 h-10 flex items-center justify-center bg-black"
+          className={twMerge(
+            "shrink-0 rounded-full w-10 h-10 flex items-center justify-center bg-black",
+            iconWrapperClassName
+          )}
         >
           <Image
             alt={icon.alt}

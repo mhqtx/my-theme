@@ -31,7 +31,8 @@ export function useContentHero() {
         href: "tel:+381629630157",
       },
     ],
-    tel: "+381629630157",
-    owner: "Milan H.",
+    tel: "381629630157",
+    owner: "Milan Hakaj",
+    email: "milan.hakaj@gmail.com",
   };
 }

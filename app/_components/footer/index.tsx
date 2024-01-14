@@ -1,12 +1,11 @@
-import Brand from "@/app/_components/hero/header";
-import Socials from "@/app/_components/socials";
 import { useContentHero } from "@/app/_content/hero";
-import Image from "next/image";
+import { About } from "@/app/_components/footer/about";
 import LogoWhite from "../../_images/vercel-white.png";
+import Image from "next/image";
 
 export function Footer() {
   // TODO: Change to useContent since it's all over the place the same...
-  const { title, description } = useContentHero();
+  const { title, description, owner, tel, email } = useContentHero();
 
   return (
     <div
@@ -32,28 +31,23 @@ export function Footer() {
             priority
           />
         </a>
+      </div>
+      <div className="max-w-[1200px] mx-auto flex flex-col lg:flex-row">
+        <About />
         <div className="max-w-[400px] mb-4 mt-4">
-          <h5 className="font-bold">{title}</h5>
-          <p className="text-sm mt-2 mb-4">{description}</p>
+          <h5 className="font-bold">Links</h5>
+          <p className="text-sm">Item 1</p>
+          <p className="text-sm">Item 2</p>
+          <p className="text-sm">Item 3</p>
+          <p className="text-sm">Item 4</p>
         </div>
-        {/* 
-        <div className="max-w-[400px] mb-4 mt-4">
-          <h5 className="font-bold">Belgrade</h5>
-          <p className="text-sm">Krfska 26</p>
-        </div> */}
-
-        {/* <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2830.858579285921!2d20.489992776238196!3d44.80407067107078!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475a7083f03126e3%3A0x6639fb364a2e1693!2sQuantox%20Technology!5e0!3m2!1sen!2srs!4v1705230179211!5m2!1sen!2srs"
-          width="30%"
-          height="200"
-          allowFullScreen
-          loading="lazy"
-          referrerPolicy="no-referrer-when-downgrade"
-        ></iframe> */}
-
-        <div className="max-w-[400px] mb-4 mt-4">
-          <Socials />
-        </div>
+      </div>
+      <div className="max-w-[1200px] mx-auto">
+        <small className="text-white">
+          © {new Date().getFullYear()} Michelangelo Hanimi, all rights reserved
+          | Powered by
+          <span className="italic underline">Vercel.com</span>
+        </small>
       </div>
     </div>
   );
