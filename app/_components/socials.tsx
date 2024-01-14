@@ -2,7 +2,11 @@ import { twMerge } from "tailwind-merge";
 import { useContentHero } from "@/app/_content/hero";
 import Image from "next/image";
 
-export default function Socials({ iconWrapperClassName }) {
+interface Props {
+  iconWrapperClassName?: string;
+}
+
+export default function Socials({ iconWrapperClassName }: Props) {
   const { socials } = useContentHero();
 
   return (
