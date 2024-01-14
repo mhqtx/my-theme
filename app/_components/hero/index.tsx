@@ -14,25 +14,27 @@ export async function Hero() {
   // });
 
   return (
-    <>
-      <Image
-        alt="Hero wallpaper"
-        className="absolute top-0 left-0 w-full h-full object-cover object-top"
-        src={HeroBackground}
-        width={1920}
-        height={1277}
-      />
+    <div className="flex">
       <div
-        className="relative z-20 flex justify-between flex-col p-2 lg:p-12 bg-white h-screen w-full lg:w-1/2"
+        className="relative flex justify-between flex-col p-2 lg:p-12 h-screen w-full lg:w-1/2"
         style={{
           backgroundImage: "radial-gradient(#a9a9a9 1px, #ffffff 1px)",
           backgroundSize: "36px 36px",
         }}
       >
-        <div className="w-[100px] h-[22px]" />
+        <div className="w-10 h-[22px]" />
         <Description />
         <Contact />
       </div>
-    </>
+      <div className="relative hidden lg:flex lg:w-1/2">
+        <Image
+          alt="Hero wallpaper"
+          className="absolute top-0 left-0 w-full h-full object-cover"
+          src={HeroBackground}
+          width={1920}
+          height={1277}
+        />
+      </div>
+    </div>
   );
 }
