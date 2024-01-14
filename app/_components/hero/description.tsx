@@ -8,7 +8,7 @@ export default function Description() {
   return (
     <div className="flex flex-col">
       <h1 className="text-3xl font-bold text-black">{title}</h1>
-      <p className="text-lg md:text-xl mt-3 mb-6 text-black">{description}</p>
+      <p className="text-lg md:text-xl mt-3 mb-3 text-black">{description}</p>
       <a
         href={link.href}
         target="_blank"

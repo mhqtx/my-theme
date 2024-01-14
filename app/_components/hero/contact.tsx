@@ -5,8 +5,7 @@ export default function Contact() {
   const { socials, tel, owner } = useContentHero();
 
   return (
-    <div className="flex mt-5 flex-col">
-      <h6 className="font-bold text-base mb-2 text-black">Get in touch:</h6>
+    <div className="flex flex-col">
       <div className="flex space-x-1 flex-grow items-center ">
         {socials.map((icon) => (
           <a
@@ -25,14 +24,6 @@ export default function Contact() {
             />
           </a>
         ))}
-        <div className="text-black/20 mx-4">|</div>
-        <a
-          href={`tel:${tel}`}
-          className="shrink-0 rounded-full bg-black px-4 h-10 flex items-center justify-center text-white"
-        >
-          <span className="hidden sm:inline mr-2">{owner}</span>
-          <span>{tel}</span>
-        </a>
       </div>
     </div>
   );

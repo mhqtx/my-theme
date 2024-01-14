@@ -1,6 +1,8 @@
 "use client";
 
 import HeroBackground from "../../_images/hero-background.jpg";
+import Gallery1 from "../../_images/gallery/gallery-1.png";
+
 import Image from "next/image";
 import { Swiper, SwiperSlide } from "@/app/_components/swiper";
 
@@ -15,13 +17,13 @@ export function Gallery() {
         </p>
       </div>
       <Swiper className="my-10">
-        {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map((item) => (
-          <SwiperSlide key={item} className="!w-fit">
-            <div className="relative w-[275px] h-[467px] bg-red-50">
+        {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map((item, index) => (
+          <SwiperSlide key={index} className="!w-fit">
+            <div className="relative w-[275px] h-[467px] bg-red-50  rounded-xl">
               <Image
                 alt="Hero wallpaper"
-                className="w-full h-full object-cover"
-                src={HeroBackground}
+                className="w-full h-full object-cover  rounded-xl"
+                src={Gallery1}
                 width={600}
                 height={200}
               />

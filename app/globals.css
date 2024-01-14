@@ -25,3 +25,8 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+
+.bg-effect {
+  background-size: "32px 32px";
+  background-image: "radial-gradient(#a9a9a9 1px, #ffffff 1px)";
+}

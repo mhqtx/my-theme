@@ -3,7 +3,7 @@ import Header from "@/app/_components/hero/header";
 // import { PrismaClient } from "@prisma/client";
 import Description from "@/app/_components/hero/description";
 import Image from "next/image";
-import HeroBackground from "../../_images/hero-background.jpg";
+import HeroBackground from "../../_images/hero-background-2.jpg";
 
 export async function Hero() {
   // const prisma = new PrismaClient();
@@ -22,9 +22,14 @@ export async function Hero() {
         width={1920}
         height={1277}
       />
-      <div className="relative z-20 flex justify-between flex-col p-4 md:p-12 bg-white/95 _bg-main/95 h-screen w-full md:w-1/2">
-        {/* TODO: use srcSet */}
-        <Header />
+      <div
+        className="relative z-20 flex justify-between flex-col p-2 lg:p-12 bg-white h-screen w-full lg:w-1/2"
+        style={{
+          backgroundImage: "radial-gradient(#a9a9a9 1px, #ffffff 1px)",
+          backgroundSize: "36px 36px",
+        }}
+      >
+        <div className="w-[100px] h-[22px]" />
         <Description />
         <Contact />
       </div>

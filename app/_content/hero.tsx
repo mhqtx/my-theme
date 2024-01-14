@@ -2,7 +2,7 @@ import { Instagram, Viber, Whatsapp } from "@/app/_icons";
 
 export function useContentHero() {
   return {
-    title: "Good afternoon!",
+    title: "Design & Fashion",
     description:
       "Empower your small business with a sleek online presence at a fraction of the cost. Budget-friendly, professional websites tailored for small businesses. Elevate your brand effortlessly in the digital world.",
     link: {
