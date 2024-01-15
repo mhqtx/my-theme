@@ -10,12 +10,16 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      container: {
+        center: true,
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
         "hero-dark":
           "radial-gradient(rgb(58 58 58) 1px, rgba(0, 0, 0, 0.8) 1px)",
+        "hero-white": "radial-gradient(#a9a9a9 1px, #ffffff 1px)",
       },
       colors: {
         main: "#faf0e6",
@@ -29,6 +33,8 @@ const config: Config = {
         "6": "48px",
         "7": "56px",
         "8": "64px",
+        "9": "72px",
+        "10": "80px",
       },
     },
   },

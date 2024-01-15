@@ -34,5 +34,57 @@ export function useContentHero() {
     tel: "381629630157",
     owner: "Milan Hakaj",
     email: "milan.hakaj@gmail.com",
+    services: {
+      description:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus expedite.",
+      title: "Who we are",
+      items: [
+        {
+          title: "Code Reviews",
+          description:
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus expedite.",
+        },
+        {
+          title: "Pull request",
+          description:
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus expedite.",
+        },
+        {
+          title: "Design requirements",
+          description:
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus expedite.",
+        },
+        {
+          title: "Assessments",
+          description:
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus expedite.",
+        },
+        {
+          title: "Flyers",
+          description:
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus expedite.",
+        },
+        {
+          title: "Posters",
+          description:
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus expedite.",
+        },
+        {
+          title: "Business cards",
+          description:
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus expedite.",
+        },
+        {
+          title: "Parallel coding",
+          description:
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus expedite.",
+        },
+        {
+          title: "Code Reviews",
+          description:
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus expedite.",
+        },
+      ],
+    },
   };
 }

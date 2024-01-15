@@ -20,7 +20,8 @@ export default async function Home() {
     <>
       <Hero />
       <Services />
-      {/* <Gallery />
+      <Gallery />
+      {/* 
       <div className="flex flex-col md:flex-row">
         <div className="w-1/2">radnov reme</div>
         <iframe

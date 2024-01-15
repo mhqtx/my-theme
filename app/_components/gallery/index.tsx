@@ -5,17 +5,11 @@ import Gallery1 from "../../_images/gallery/gallery-1.png";
 
 import Image from "next/image";
 import { Swiper, SwiperSlide } from "@/app/_components/swiper";
+import Socials from "@/app/_components/socials";
 
 export function Gallery() {
   return (
     <div className="text-center bg-black px-4 py-16">
-      <div className="text-center text-white max-w-[50%] mx-auto">
-        <h1 className="text-3xl font-bold">What we do</h1>
-        <p className="text-lg md:text-xl mt-3 mb-6 text-center">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum dolore
-          quod soluta.
-        </p>
-      </div>
       <Swiper className="my-10">
         {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map((item, index) => (
           <SwiperSlide key={index} className="!w-fit">
@@ -43,12 +37,10 @@ export function Gallery() {
           </SwiperSlide>
         ))}
       </Swiper>
-      <button className="p-2 right-0 mx-auto z-20 bg-white text-black w-fit font-medium mt-8 space-x-2">
-        <span>See more on Instagram</span>
-        <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-          -&gt;
-        </span>
-      </button>
+      <div className="p-2 right-0 mx-auto z-20 text-white w-fit font-medium mt-8">
+        <span className="mb-2">Seek for more content on:</span>
+        <Socials iconWrapperClassName="bg-[#2b2b2b]" />
+      </div>
     </div>
   );
 }

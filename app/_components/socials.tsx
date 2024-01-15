@@ -19,7 +19,7 @@ export default function Socials({ iconWrapperClassName }: Props) {
           rel="noopener noreferrer"
           // TODO: Use twMerge
           className={twMerge(
-            "shrink-0 rounded-full w-10 h-10 flex items-center justify-center bg-black",
+            "shrink-0 rounded-full w-5 h-5 flex items-center justify-center bg-black",
             iconWrapperClassName
           )}
         >
