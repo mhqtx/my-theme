@@ -15,7 +15,7 @@ export default function Description() {
         className="text-lg md:text-xl text-black font-semibold mt-3 w-fit space-x-1"
       >
         <span>{link.text}</span>
-        <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
+        <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none rotate-90">
           -&gt;
         </span>
       </a>

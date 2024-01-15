@@ -6,7 +6,7 @@ export function useContentHero() {
     description:
       "Empower your small business with a sleek online presence at a fraction of the cost. Budget-friendly, professional websites tailored for small businesses. Elevate your brand effortlessly in the digital world.",
     link: {
-      text: "Learn more",
+      text: "Read more",
       href: "https://letmegooglethat.com/?q=why+do+I+need+a+website+for+my+business%3F",
     },
     socials: [

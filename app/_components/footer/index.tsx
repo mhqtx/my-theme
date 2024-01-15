@@ -32,14 +32,17 @@ export function Footer() {
           />
         </a>
       </div>
-      <div className="max-w-[1200px] mx-auto flex flex-col lg:flex-row">
+      <div className="max-w-[1200px] mx-auto flex flex-col lg:flex-row lg:space-x-4">
         <About />
         <div className="max-w-[400px] mb-4 mt-4">
-          <h5 className="font-bold">Links</h5>
-          <p className="text-sm">Item 1</p>
-          <p className="text-sm">Item 2</p>
-          <p className="text-sm">Item 3</p>
-          <p className="text-sm">Item 4</p>
+          <h5 className="font-bold mb-2">Links</h5>
+          <div className="flex flex-col lg:flex-row lg:space-x-2">
+            <p className="text-sm underline">Intro</p>
+            <p className="text-sm underline">Who we are</p>
+            <p className="text-sm underline">Gallery</p>
+            <p className="text-sm underline">Location</p>
+            <p className="text-sm underline">Contact form</p>
+          </div>
         </div>
       </div>
       <div className="max-w-[1200px] mx-auto">

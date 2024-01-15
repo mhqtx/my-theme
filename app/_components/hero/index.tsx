@@ -36,6 +36,13 @@ export async function Hero() {
           width={1920}
           height={1277}
         />
+        <div
+          // TODO: Make bg-pattern for other items...
+          className="absolute top-0 left-0 w-full h-full bg-hero-dark"
+          style={{
+            backgroundSize: "40px 40px",
+          }}
+        />
       </div>
     </div>
   );

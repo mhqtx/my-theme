@@ -6,6 +6,7 @@ import Image from "next/image";
 import { Swiper, SwiperSlide } from "@/app/_components/swiper";
 import { Gallery } from "@/app/_components/gallery";
 import { Footer } from "@/app/_components/footer";
+import Services from "@/app/_components/services";
 
 export default async function Home() {
   // const prisma = new PrismaClient();
@@ -18,6 +19,7 @@ export default async function Home() {
   return (
     <>
       <Hero />
+      <Services />
       {/* <Gallery />
       <div className="flex flex-col md:flex-row">
         <div className="w-1/2">radnov reme</div>

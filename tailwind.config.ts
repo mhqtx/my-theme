@@ -14,6 +14,8 @@ const config: Config = {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+        "hero-dark":
+          "radial-gradient(rgb(58 58 58) 1px, rgba(0, 0, 0, 0.8) 1px)",
       },
       colors: {
         main: "#faf0e6",
