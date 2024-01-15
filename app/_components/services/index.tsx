@@ -1,13 +1,7 @@
-import { twMerge } from "tailwind-merge";
 import { useContentHero } from "@/app/_content/hero";
-import Image from "next/image";
 import CaptionH2 from "@/app/_components/caption";
 
-interface Props {
-  iconWrapperClassName?: string;
-}
-
-export default function Services({ iconWrapperClassName }: Props) {
+export default function Services() {
   const {
     services: { title, description, items },
   } = useContentHero();
