@@ -1,6 +1,9 @@
+"use client";
+
 import { twMerge } from "tailwind-merge";
 import { useContentHero } from "@/app/_content/hero";
 import Image from "next/image";
+import { motion } from "framer-motion";
 
 interface Props {
   iconWrapperClassName?: string;
@@ -12,7 +15,10 @@ export default function Socials({ iconWrapperClassName }: Props) {
   return (
     <div className="flex space-x-0.5 items-center">
       {socials.map((icon) => (
-        <a
+        // TODO: Check reduce bundle size:https://www.framer.com/motion/guide-reduce-bundle-size/
+        <motion.a
+          whileHover={{ scale: 1.1 }}
+          transition={{ type: "spring", stiffness: 400, damping: 10 }}
           href={icon.href}
           key={icon.src}
           target="_blank"
@@ -30,7 +36,7 @@ export default function Socials({ iconWrapperClassName }: Props) {
             width={24}
             height={24}
           />
-        </a>
+        </motion.a>
       ))}
     </div>
   );
