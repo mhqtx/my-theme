@@ -22,7 +22,7 @@ export default function Services({ iconWrapperClassName }: Props) {
               <>
                 <div
                   key={index}
-                  className="flex w-full flex-col lg:w-1/3 mb-2 last:mb-0 lg:pr-4 text-black p-2 rounded-xl "
+                  className="flex w-full flex-col lg:w-1/3 mb-4 last:mb-0 text-black lg:p-2 rounded-xl"
                 >
                   <div className="flex items-center space-x-1">
                     <span className="shrink-0 rounded-full w-5 h-5 font-bold text-white flex items-center justify-center bg-black">
