@@ -1,6 +1,6 @@
 export default async function Location() {
   return (
-    <div className="flex flex-col lg:flex-row">
+    <div className="flex flex-col lg:flex-row text-black">
       <div
         className="w-full lg:w-1/2 p-2 lg:p-10 lg:order-1"
         style={{
