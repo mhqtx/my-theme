@@ -36,7 +36,7 @@ export default function Dropdown({ onClose }: Props) {
             priority
           />
         </button>
-        <div className="text-black text-right">
+        <div className="text-black w-full">
           <h1 className="text-3xl font-bold mt-4">Browse:</h1>
           <div className="flex flex-col text-2xl mb-2 last:mb-0">
             {[
