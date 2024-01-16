@@ -9,6 +9,7 @@ import { useEffect, useRef, useState } from "react";
 import Dropdown from "@/app/_components/nav/dropdown";
 import { motion, useScroll } from "framer-motion";
 
+// TODO: Use https://eu.louisvuitton.com/eng-e1/point-of-sale/austria/louis-vuitton-vienne
 export default function Nav() {
   const ref = useRef<HTMLDivElement>(null);
   const { owner, tel } = useContentHero();
@@ -39,10 +40,10 @@ export default function Nav() {
       <div
         ref={ref}
         className={c(
-          `transition-all	z-30 fixed top-0 items-center flex justify-between left-0 w-full text-right px-2 py-2`,
+          `border-b border-black/20 bg-white transition-all	z-30 fixed top-0 items-center flex justify-between left-0 w-full text-right px-2 py-2`,
           {
-            "bg-white py-2 px-2": isScrolledDown,
-            "lg:px-6 lg:py-6": !isScrolledDown,
+            "bg-white p-2": isScrolledDown,
+            // "lg:px-6 lg:py-6": !isScrolledDown,
           }
         )}
         style={{
@@ -67,23 +68,11 @@ export default function Nav() {
           />
         </a>
         <div className="flex items-center">
-          <a
-            href={`tel:${tel}`}
-            target="_blank"
-            rel="noopener noreferrer"
-            className={c(
-              "hidden border lg:flex shrink-0 rounded-full px-2 items-center justify-center space-x-1",
-              {
-                " border-white text-white": !isScrolledDown,
-                "border-black text-black": isScrolledDown,
-              }
-            )}
+          <button
+            onClick={() => setIsDropdownOpened((prev) => !prev)}
+            className="flex space-x-1 items-center"
           >
-            <Image alt="" src={Phone} width={24} height={24} />
-            <span>{tel}</span>
-          </a>
-          <div className="text-black/10 mx-1">|</div>
-          <button onClick={() => setIsDropdownOpened((prev) => !prev)}>
+            <span className="font-bold">Menu</span>
             <Image
               src={Hamburger}
               alt="Vercel Logo"

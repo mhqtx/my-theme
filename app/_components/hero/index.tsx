@@ -17,18 +17,30 @@ export async function Hero() {
   return (
     <div className="flex">
       <div
-        className="relative flex justify-between flex-col p-2 lg:p-12 h-screen w-full lg:w-1/2"
+        className="relative px-2 py-5 lg:py-10 flex justify-between flex-col p-2 lg:p-12 h-screen w-full"
         style={{
           backgroundImage: "radial-gradient(#a9a9a9 1px, #ffffff 1px)",
           backgroundSize: "40px 40px",
         }}
       >
-        {/* Placeholder for img */}
-        <div />
-        <Description />
-        <Socials />
+        <div className="container h-full flex">
+          <div className="w-full h-full justify-between flex flex-col lg:w-1/2 ">
+            <div />
+            <Description />
+            <Socials />
+          </div>
+          <div className="hidden lg:flex lg:items-center w-1/2 text-center justify-center">
+            <Image
+              alt="Hero wallpaper"
+              className="rounded-xl w-[80%] rotate-50 mb-5"
+              src={HeroBackground}
+              width={450}
+              height={250}
+            />
+          </div>
+        </div>
       </div>
-      <div className="relative hidden lg:flex lg:w-1/2">
+      {/* <div className="relative hidden lg:flex lg:w-1/2">
         <Image
           alt="Hero wallpaper"
           className="absolute top-0 left-0 w-full h-full object-cover"
@@ -43,7 +55,7 @@ export async function Hero() {
             backgroundSize: "40px 40px",
           }}
         />
-      </div>
+      </div> */}
     </div>
   );
 }
