@@ -2,6 +2,7 @@ import { useContentHero } from "@/app/_content/hero";
 import { About } from "@/app/_components/footer/about";
 import LogoWhite from "../../_images/vercel-white.png";
 import Image from "next/image";
+import Socials from "@/app/_components/socials";
 
 export function Footer() {
   // TODO: Change to useContent since it's all over the place the same...
@@ -24,7 +25,7 @@ export function Footer() {
         backgroundSize: "40px 40px",
       }}
     >
-      <div className="max-w-[1200px] mx-auto">
+      <div className="container">
         <a
           className="pointer-events-none"
           href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
@@ -41,37 +42,39 @@ export function Footer() {
           />
         </a>
       </div>
-      <div className="max-w-[1200px] mx-auto flex flex-col lg:flex-row lg:space-x-4">
+      <div className="container flex flex-col lg:flex-row lg:space-x-4">
         <About />
-        <div className="max-w-[400px] mb-4 mt-4">
-          <h5 className="font-bold mb-2">Services</h5>
-          <div className="flex flex-col">
-            {serviceItems.map((item) => (
-              <p key={item.title} className="text-sm mb-0.5 w-full">
-                {item.title}
-              </p>
-            ))}
+        <div className="bg-reds-100 flex flex-col lg:flex-row w-full lg:[&>div]:mx-3">
+          <div className="max-w-[400px] mb-4 mt-4">
+            <h5 className="font-bold mb-2">Services</h5>
+            <div className="flex flex-col">
+              {serviceItems.map((item) => (
+                <p key={item.title} className="text-sm mb-0.5 w-full">
+                  {item.title}
+                </p>
+              ))}
+            </div>
           </div>
-        </div>
-        <div className="max-w-[400px] mb-4 mt-4">
-          <h5 className="font-bold mb-2">Working hours</h5>
-          <div className="flex flex-col">
-            {Object.entries(workingHours).map(([key, value]) => (
-              <p key={key} className="text-sm mb-0.5 w-full space-x-1">
-                <span className="capitalize">{key}</span>
-                <small className="bg-white text-black">{value}</small>
-              </p>
-            ))}
+          <div className="max-w-[400px] mb-4 mt-4">
+            <h5 className="font-bold mb-2">Working hours</h5>
+            <div className="flex flex-col">
+              {Object.entries(workingHours).map(([key, value]) => (
+                <p key={key} className="text-sm mb-0.5 w-full space-x-1 ">
+                  <span className="capitalize">{key}</span>
+                  <small className="bg-white text-black">{value}</small>
+                </p>
+              ))}
+            </div>
           </div>
-        </div>
-        <div className="max-w-[400px] mb-4 mt-4">
-          <h5 className="font-bold mb-2">Links</h5>
-          <div className="flex flex-col">
-            {menuItems.map((item) => (
-              <p key={item} className="text-sm mb-0.5 w-full">
-                {item}
-              </p>
-            ))}
+          <div className="max-w-[400px] mb-4 mt-4">
+            <h5 className="font-bold mb-2">Links</h5>
+            <div className="flex flex-col">
+              {menuItems.map((item) => (
+                <p key={item} className="text-sm mb-0.5 w-full">
+                  {item}
+                </p>
+              ))}
+            </div>
           </div>
         </div>
       </div>

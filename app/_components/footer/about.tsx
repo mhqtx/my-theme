@@ -25,13 +25,21 @@ export function About() {
         referrerPolicy="no-referrer-when-downgrade"
       ></iframe>
 
-      <div className="max-w-[400px] mb-4 mt-4">
+      <div className="max-w-[400px] mt-4">
         <h5 className="font-bold">Belgrade, Serbia</h5>
-        <p className="text-sm">Krfska 26</p>
+        <div className="text-sm flex space-x-1">
+          <Image
+            alt=""
+            className="text-white"
+            src={Phone}
+            width={16}
+            height={16}
+          />
+          <span>Krfska 26</span>
+        </div>
       </div>
 
-      <div className="max-w-[400px] mb-4 mt-4">
-        <h5 className="font-bold">{owner}</h5>
+      <div className="max-w-[400px] mb-4">
         <div className="text-sm flex space-x-1">
           <Image
             alt=""
@@ -55,6 +63,8 @@ export function About() {
       </div>
 
       <div className="max-w-[400px] mb-4 mt-4">
+        {" "}
+        <h5 className="font-bold mb-1">Connect with us</h5>
         <Socials iconWrapperClassName="bg-[#2b2b2b]" />
       </div>
     </div>

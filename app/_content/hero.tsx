@@ -88,11 +88,6 @@ export function useContentHero() {
           description:
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus expedite.",
         },
-        {
-          title: "Code Reviews",
-          description:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus expedite.",
-        },
       ],
     },
     menu: {
