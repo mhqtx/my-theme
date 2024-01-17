@@ -6,6 +6,7 @@ import * as Swjs from "swiper/react";
 import { PropsWithChildren } from "react";
 import { Navigation } from "swiper/modules";
 import { SwiperOptions } from "swiper/types";
+
 import { PrevButton } from "./prev-button";
 import { NextButton } from "./next-button";
 

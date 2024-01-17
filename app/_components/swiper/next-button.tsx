@@ -1,10 +1,11 @@
+import c from "clsx";
+import Image from "next/image";
+
 import {
   nextElClassName,
   gradientElClassName,
   navigationElClassName,
 } from "@/app/_components/swiper";
-import c from "clsx";
-import Image from "next/image";
 
 export function NextButton() {
   return (
@@ -12,7 +13,7 @@ export function NextButton() {
       <div
         className={c(
           gradientElClassName,
-          "right-0 bg-gradient-to-l max-sm:hidden"
+          "right-0 bg-gradient-to-l max-sm:hidden",
         )}
       />
       <button

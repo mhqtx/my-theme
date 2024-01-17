@@ -2,6 +2,7 @@
 
 import { useEffect } from "react";
 import Image from "next/image";
+
 import { Hamburger } from "@/app/_icons";
 import { useContent } from "@/app/_hooks/use-content";
 
@@ -26,11 +27,11 @@ export default function Dropdown({ onClose }: Props) {
   return (
     <>
       <div
-        className="fixed bg-black/90 left-0 h-full w-full z-40"
+        className="fixed left-0 z-40 h-full w-full bg-black/90"
         onClick={onClose}
       />
-      <div className="bg-white flex p-2 items-end right-0 fixed w-full lg:w-1/3 h-full z-40 flex-col">
-        <button onClick={onClose} className="flex space-x-1 items-center">
+      <div className="fixed right-0 z-40 flex h-full w-full flex-col items-end bg-white p-2 lg:w-1/3">
+        <button onClick={onClose} className="flex items-center space-x-1">
           <span className="font-bold">Close</span>
           <Image
             src={Hamburger}
@@ -41,9 +42,9 @@ export default function Dropdown({ onClose }: Props) {
             priority
           />
         </button>
-        <div className="text-black w-full">
-          <h1 className="text-3xl font-bold mt-4">Browse:</h1>
-          <div className="flex flex-col text-2xl mb-2 last:mb-0">
+        <div className="w-full text-black">
+          <h1 className="mt-4 text-3xl font-bold">Browse:</h1>
+          <div className="mb-2 flex flex-col text-2xl last:mb-0">
             {menuItems.map((item) => (
               <a
                 key={item}

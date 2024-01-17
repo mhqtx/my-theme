@@ -2,13 +2,14 @@
 
 import { Input } from "@nextui-org/react";
 import { Textarea } from "@nextui-org/react";
+
 import { updateHelloWorld } from "@/app/_server-actions";
 import { SubmitButton } from "@/app/admin/_components/submit-button";
 
 export function HelloWorldForm() {
   return (
     <form
-      className="flex w-full flex-col flex-wrap md:flex-nowrap gap-4"
+      className="flex w-full flex-col flex-wrap gap-4 md:flex-nowrap"
       action={updateHelloWorld}
     >
       <Input name="title" type="text" placeholder="Enter your email" />

@@ -1,9 +1,10 @@
 "use client";
 
 import { twMerge } from "tailwind-merge";
-import { useContent } from "@/app/_hooks/use-content";
 import Image from "next/image";
 import { motion } from "framer-motion";
+
+import { useContent } from "@/app/_hooks/use-content";
 
 interface Props {
   iconWrapperClassName?: string;
@@ -13,7 +14,7 @@ export default function Socials({ iconWrapperClassName }: Props) {
   const { socials } = useContent();
 
   return (
-    <div className="flex space-x-0.5 items-center">
+    <div className="flex items-center space-x-0.5">
       {socials.map((icon) => (
         // TODO: Check reduce bundle size:https://www.framer.com/motion/guide-reduce-bundle-size/
         <motion.a
@@ -25,8 +26,8 @@ export default function Socials({ iconWrapperClassName }: Props) {
           rel="noopener noreferrer"
           // TODO: Use twMerge
           className={twMerge(
-            "shrink-0 rounded-full w-5 h-5 flex items-center justify-center bg-black",
-            iconWrapperClassName
+            "flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-black",
+            iconWrapperClassName,
           )}
         >
           <Image
