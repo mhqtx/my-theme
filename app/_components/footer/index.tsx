@@ -11,6 +11,7 @@ export function Footer() {
     owner,
     tel,
     email,
+    workingHours,
     services: { items: serviceItems },
     menu: { items: menuItems },
   } = useContentHero();
@@ -48,6 +49,17 @@ export function Footer() {
             {serviceItems.map((item) => (
               <p key={item.title} className="text-sm mb-0.5 w-full">
                 {item.title}
+              </p>
+            ))}
+          </div>
+        </div>
+        <div className="max-w-[400px] mb-4 mt-4">
+          <h5 className="font-bold mb-2">Working hours</h5>
+          <div className="flex flex-col">
+            {Object.entries(workingHours).map(([key, value]) => (
+              <p key={key} className="text-sm mb-0.5 w-full space-x-1">
+                <span className="capitalize">{key}</span>
+                <small className="bg-white text-black">{value}</small>
               </p>
             ))}
           </div>

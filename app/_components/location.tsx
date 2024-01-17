@@ -1,4 +1,8 @@
+import { useContentHero } from "@/app/_content/hero";
+
 export default async function Location() {
+  const { workingHours } = useContentHero();
+
   return (
     <div className="flex flex-col lg:flex-row text-black">
       <div
@@ -24,27 +28,11 @@ export default async function Location() {
         {/* <Socials /> */}
         <h6 className="font-bold text-xl mt-4">Working hours</h6>
         <div className="h-[1px] w-full bg-gradient-to-r from-black my-2" />
-        <p>
-          <span className="font-bold">Monday</span> 10:00 / 19:00
-        </p>
-        <p>
-          <span className="font-bold">Tuesday</span> 10:00 / 19:00
-        </p>
-        <p>
-          <span className="font-bold">Wednesday</span> 10:00 / 19:00
-        </p>
-        <p>
-          <span className="font-bold">Thursday</span> 10:00 / 19:00
-        </p>
-        <p>
-          <span className="font-bold">Friday</span> 10:00 / 19:00
-        </p>
-        <p>
-          <span className="font-bold">Saturday</span> 10:00 / 18:00
-        </p>
-        <p>
-          <span className="font-bold">Sunday</span> /
-        </p>
+        {Object.entries(workingHours).map(([key, value]) => (
+          <p key={key}>
+            <span className="font-bold capitalize">{key}</span> {value}
+          </p>
+        ))}
       </div>
       <div className="w-full lg-w-1/2">
         <iframe

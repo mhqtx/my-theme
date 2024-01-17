@@ -2,6 +2,15 @@ import { Instagram, Phone, Viber, Whatsapp } from "@/app/_icons";
 
 export function useContentHero() {
   return {
+    workingHours: {
+      monday: "10 - 19h",
+      tuesday: "10 - 19h",
+      wednesday: "10 - 19h",
+      thursday: "10 - 19h",
+      friday: "10 - 19h",
+      saturday: "10 - 19h",
+      sunday: "/",
+    },
     title: "Web UI & Design",
     description:
       "Empower your small business with a sleek online presence at a fraction of the cost. Budget-friendly, professional websites tailored for small businesses. Elevate your brand effortlessly in the digital world.",
