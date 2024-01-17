@@ -3,6 +3,7 @@
 import { useEffect } from "react";
 import Image from "next/image";
 import { Hamburger } from "@/app/_icons";
+import { useContentHero } from "@/app/_content/hero";
 
 interface Props {
   onClose: () => void;
@@ -10,6 +11,10 @@ interface Props {
 
 // TODO: Improve logic :=)
 export default function Dropdown({ onClose }: Props) {
+  const {
+    menu: { items: menuItems },
+  } = useContentHero();
+
   useEffect(() => {
     document.body.style.overflowY = "hidden";
 
@@ -39,13 +44,7 @@ export default function Dropdown({ onClose }: Props) {
         <div className="text-black w-full">
           <h1 className="text-3xl font-bold mt-4">Browse:</h1>
           <div className="flex flex-col text-2xl mb-2 last:mb-0">
-            {[
-              "Home",
-              "Services",
-              "Social media content",
-              "Location",
-              "Contact",
-            ].map((item) => (
+            {menuItems.map((item) => (
               <a
                 key={item}
                 className="hover:text-[#fe8484]"

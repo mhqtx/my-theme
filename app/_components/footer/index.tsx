@@ -5,7 +5,15 @@ import Image from "next/image";
 
 export function Footer() {
   // TODO: Change to useContent since it's all over the place the same...
-  const { title, description, owner, tel, email } = useContentHero();
+  const {
+    title,
+    description,
+    owner,
+    tel,
+    email,
+    services: { items: serviceItems },
+    menu: { items: menuItems },
+  } = useContentHero();
 
   return (
     <div
@@ -35,13 +43,23 @@ export function Footer() {
       <div className="max-w-[1200px] mx-auto flex flex-col lg:flex-row lg:space-x-4">
         <About />
         <div className="max-w-[400px] mb-4 mt-4">
+          <h5 className="font-bold mb-2">Services</h5>
+          <div className="flex flex-col">
+            {serviceItems.map((item) => (
+              <p key={item.title} className="text-sm mb-0.5 w-full">
+                {item.title}
+              </p>
+            ))}
+          </div>
+        </div>
+        <div className="max-w-[400px] mb-4 mt-4">
           <h5 className="font-bold mb-2">Links</h5>
-          <div className="flex flex-col lg:flex-row lg:space-x-2">
-            <p className="text-sm underline">Intro</p>
-            <p className="text-sm underline">Who we are</p>
-            <p className="text-sm underline">Gallery</p>
-            <p className="text-sm underline">Location</p>
-            <p className="text-sm underline">Contact form</p>
+          <div className="flex flex-col">
+            {menuItems.map((item) => (
+              <p key={item} className="text-sm mb-0.5 w-full">
+                {item}
+              </p>
+            ))}
           </div>
         </div>
       </div>

@@ -27,7 +27,8 @@ export async function Hero() {
           <div className="w-full h-full justify-between flex flex-col lg:w-1/2 ">
             <div />
             <Description />
-            <Socials />
+            {/* <Socials /> */}
+            <div />
           </div>
           <div className="hidden lg:flex lg:items-center w-1/2 text-center justify-center">
             <Image

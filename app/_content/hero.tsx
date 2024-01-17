@@ -86,5 +86,14 @@ export function useContentHero() {
         },
       ],
     },
+    menu: {
+      items: [
+        "Home",
+        "Services",
+        "Social media content",
+        "Location",
+        "Contact",
+      ],
+    },
   };
 }

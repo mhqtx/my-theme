@@ -8,6 +8,7 @@ import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
 import Dropdown from "@/app/_components/nav/dropdown";
 import { motion, useScroll } from "framer-motion";
+import Socials from "@/app/_components/socials";
 
 // TODO: Use https://eu.louisvuitton.com/eng-e1/point-of-sale/austria/louis-vuitton-vienne
 export default function Nav() {
@@ -43,7 +44,6 @@ export default function Nav() {
           `border-b border-black/20 bg-white transition-all	z-30 fixed top-0 items-center flex justify-between left-0 w-full text-right px-2 py-2`,
           {
             "bg-white p-2": isScrolledDown,
-            // "lg:px-6 lg:py-6": !isScrolledDown,
           }
         )}
         style={{
@@ -52,36 +52,39 @@ export default function Nav() {
             : undefined,
         }}
       >
-        <a
-          className="pointer-events-none"
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            src="/vercel.svg"
-            alt="Vercel Logo"
-            className="dark:invert"
-            width={100}
-            height={24}
-            priority
-          />
-        </a>
-        <div className="flex items-center">
-          <button
-            onClick={() => setIsDropdownOpened((prev) => !prev)}
-            className="flex space-x-1 items-center"
+        <div className="container flex w-full items-center justify-between">
+          <a
+            className="pointer-events-none"
+            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
+            target="_blank"
+            rel="noopener noreferrer"
           >
-            <span className="font-bold">Menu</span>
             <Image
-              src={Hamburger}
+              src="/vercel.svg"
               alt="Vercel Logo"
               className="dark:invert"
-              width={24}
+              width={100}
               height={24}
               priority
             />
-          </button>
+          </a>
+          <div className="flex items-center">
+            <Socials />
+            {/* <button
+              onClick={() => setIsDropdownOpened((prev) => !prev)}
+              className="flex space-x-1 items-center"
+            >
+              <span className="font-bold">Menu</span>
+              <Image
+                src={Hamburger}
+                alt="Vercel Logo"
+                className="dark:invert"
+                width={24}
+                height={24}
+                priority
+              />
+            </button> */}
+          </div>
         </div>
       </div>
     </>
