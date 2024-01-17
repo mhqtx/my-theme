@@ -1,7 +1,7 @@
 "use client";
 
 import { twMerge } from "tailwind-merge";
-import { useContentHero } from "@/app/_content/hero";
+import { useContent } from "@/app/_hooks/use-content";
 import Image from "next/image";
 import { motion } from "framer-motion";
 
@@ -10,7 +10,7 @@ interface Props {
 }
 
 export default function Socials({ iconWrapperClassName }: Props) {
-  const { socials } = useContentHero();
+  const { socials } = useContent();
 
   return (
     <div className="flex space-x-0.5 items-center">

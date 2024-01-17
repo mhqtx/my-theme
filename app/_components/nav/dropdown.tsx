@@ -3,7 +3,7 @@
 import { useEffect } from "react";
 import Image from "next/image";
 import { Hamburger } from "@/app/_icons";
-import { useContentHero } from "@/app/_content/hero";
+import { useContent } from "@/app/_hooks/use-content";
 
 interface Props {
   onClose: () => void;
@@ -13,7 +13,7 @@ interface Props {
 export default function Dropdown({ onClose }: Props) {
   const {
     menu: { items: menuItems },
-  } = useContentHero();
+  } = useContent();
 
   useEffect(() => {
     document.body.style.overflowY = "hidden";

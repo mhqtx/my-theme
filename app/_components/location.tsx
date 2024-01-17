@@ -1,7 +1,7 @@
-import { useContentHero } from "@/app/_content/hero";
+import { useContent } from "@/app/_hooks/use-content";
 
 export default async function Location() {
-  const { workingHours } = useContentHero();
+  const { workingHours } = useContent();
 
   return (
     <div className="flex flex-col lg:flex-row text-black">

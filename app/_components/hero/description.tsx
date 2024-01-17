@@ -1,9 +1,9 @@
 "use client";
 
-import { useContentHero } from "@/app/_content/hero";
+import { useContent } from "@/app/_hooks/use-content";
 
 export default function Description() {
-  const { title, description, link } = useContentHero();
+  const { title, description, link } = useContent();
 
   return (
     <div className="flex flex-col">

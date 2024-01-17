@@ -1,6 +1,6 @@
 import { Instagram, Phone, Viber, Whatsapp } from "@/app/_icons";
 
-export function useContentHero() {
+export function useContent() {
   return {
     workingHours: {
       monday: "10 - 19h",

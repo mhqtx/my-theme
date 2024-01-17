@@ -2,7 +2,7 @@
 
 import c from "clsx";
 
-import { useContentHero } from "@/app/_content/hero";
+import { useContent } from "@/app/_hooks/use-content";
 import { Hamburger, Phone } from "@/app/_icons";
 import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
@@ -13,7 +13,7 @@ import Socials from "@/app/_components/socials";
 // TODO: Use https://eu.louisvuitton.com/eng-e1/point-of-sale/austria/louis-vuitton-vienne
 export default function Nav() {
   const ref = useRef<HTMLDivElement>(null);
-  const { owner, tel } = useContentHero();
+  const { owner, tel } = useContent();
   const { scrollYProgress } = useScroll();
 
   const [isScrolledDown, setIsScrolledDown] = useState(false);

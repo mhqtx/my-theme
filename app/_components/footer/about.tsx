@@ -1,13 +1,13 @@
 import Brand from "@/app/_components/hero/header";
 import Socials from "@/app/_components/socials";
-import { useContentHero } from "@/app/_content/hero";
+import { useContent } from "@/app/_hooks/use-content";
 import Image from "next/image";
 import LogoWhite from "../../_images/vercel-white.png";
 import { Phone } from "@/app/_icons";
 
 export function About() {
   // TODO: Change to useContent since it's all over the place the same...
-  const { title, description, owner, tel, email } = useContentHero();
+  const { title, description, owner, tel, email } = useContent();
 
   return (
     <div className="max-w-[400px] w-full">

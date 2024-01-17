@@ -1,4 +1,4 @@
-import { useContentHero } from "@/app/_content/hero";
+import { useContent } from "@/app/_hooks/use-content";
 import { About } from "@/app/_components/footer/about";
 import LogoWhite from "../../_images/vercel-white.png";
 import Image from "next/image";
@@ -16,7 +16,7 @@ export function CallToAction() {
     workingHours,
     services: { items: serviceItems },
     menu: { items: menuItems },
-  } = useContentHero();
+  } = useContent();
 
   return (
     <div className="w-full bg-yellow-100 text-white p-2 lg:p-6">

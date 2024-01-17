@@ -1,10 +1,10 @@
-import { useContentHero } from "@/app/_content/hero";
+import { useContent } from "@/app/_hooks/use-content";
 import CaptionH2 from "@/app/_components/caption";
 
 export default function Services() {
   const {
     services: { title, description, items },
-  } = useContentHero();
+  } = useContent();
 
   return (
     <>
