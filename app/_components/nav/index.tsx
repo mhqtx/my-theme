@@ -75,7 +75,7 @@ export default function Nav() {
             <span className="mx-2 text-black/10 hidden sm:flex">|</span>
             <button
               onClick={() => setIsDropdownOpened((prev) => !prev)}
-              className="flex font-bold space-x-1 h-5 items-center justify-center"
+              className="flex font-bold space-x-1 h-5 items-center text-black justify-center"
             >
               MENU
             </button>
