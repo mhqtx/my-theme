@@ -69,21 +69,16 @@ export default function Nav() {
             />
           </a>
           <div className="flex items-center">
-            <Socials />
-            {/* <button
+            <div className="hidden sm:flex">
+              <Socials />
+            </div>
+            <span className="mx-2 text-black/10 hidden sm:flex">|</span>
+            <button
               onClick={() => setIsDropdownOpened((prev) => !prev)}
-              className="flex space-x-1 items-center"
+              className="flex font-bold space-x-1 h-5 items-center justify-center"
             >
-              <span className="font-bold">Menu</span>
-              <Image
-                src={Hamburger}
-                alt="Vercel Logo"
-                className="dark:invert"
-                width={24}
-                height={24}
-                priority
-              />
-            </button> */}
+              MENU
+            </button>
           </div>
         </div>
       </div>
