@@ -4,6 +4,7 @@ import LogoWhite from "../../_images/vercel-white.png";
 import Image from "next/image";
 import Socials from "@/app/_components/socials";
 
+// TODO: Tidy up everything, use proper html tags, split into components, use data from content hook
 export function Footer() {
   // TODO: Change to useContent since it's all over the place the same...
   const {

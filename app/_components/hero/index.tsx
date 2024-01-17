@@ -6,6 +6,7 @@ import Image from "next/image";
 import HeroBackground from "../../_images/hero-background-2.jpg";
 import Socials from "@/app/_components/socials";
 
+// TODO: Tidy up hero component, name it Hero1, split into components, use proper tags
 export async function Hero() {
   // const prisma = new PrismaClient();
   // const content = await prisma.main.findUnique({
@@ -41,22 +42,6 @@ export async function Hero() {
           </div>
         </div>
       </div>
-      {/* <div className="relative hidden lg:flex lg:w-1/2">
-        <Image
-          alt="Hero wallpaper"
-          className="absolute top-0 left-0 w-full h-full object-cover"
-          src={HeroBackground}
-          width={1920}
-          height={1277}
-        />
-        <div
-          // TODO: Make bg-pattern for other items...
-          className="absolute top-0 left-0 w-full h-full bg-hero-dark"
-          style={{
-            backgroundSize: "40px 40px",
-          }}
-        />
-      </div> */}
     </div>
   );
 }
