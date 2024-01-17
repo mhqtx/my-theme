@@ -21,6 +21,12 @@ const config: Config = {
           "radial-gradient(rgb(58 58 58) 1px, rgba(0, 0, 0, 0.8) 1px)",
         "hero-white": "radial-gradient(#a9a9a9 1px, #ffffff 1px)",
       },
+      backgroundSize: {
+        auto: "auto",
+        cover: "cover",
+        contain: "contain",
+        "5": "40px 40px",
+      },
       colors: {
         main: "#faf0e6",
       },
