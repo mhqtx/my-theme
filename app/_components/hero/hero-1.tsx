@@ -17,7 +17,6 @@ export async function Hero1() {
           <div className="flex h-full w-full flex-col items-center justify-center lg:w-1/2 ">
             <div>
               <h1 className="text-3xl font-bold">{title}</h1>
-              {/* TODO: Add image on mobile? */}
               <p className="mb-4 mt-3 text-lg md:text-xl">{description}</p>
               <motion.button
                 whileHover={{ scale: 1.1 }}
