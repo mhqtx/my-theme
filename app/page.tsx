@@ -4,6 +4,7 @@ import { Gallery } from "@/app/_components/gallery";
 import { Footer } from "@/app/_components/footer";
 import Services from "@/app/_components/services";
 import Location from "@/app/_components/location";
+import { CallToAction } from "@/app/_components/call-to-action";
 
 export default async function Home() {
   // const prisma = new PrismaClient();
@@ -19,6 +20,7 @@ export default async function Home() {
       <Services />
       <Gallery />
       <Location />
+      <CallToAction />
       <Footer />
     </>
   );
