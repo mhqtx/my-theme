@@ -40,7 +40,7 @@ export default function Nav() {
       <div
         ref={ref}
         className={c(
-          `fixed left-0 top-0 z-30	flex w-full items-center justify-between border-b border-black/20 bg-white px-2 py-2 text-right transition-all`,
+          `fixed left-0 top-0 z-30 flex h-8 w-full items-center justify-between border-b border-black/20 bg-white px-2 text-right transition-all`,
           {
             "bg-white p-2": isScrolledDown,
           },
