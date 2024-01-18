@@ -10,8 +10,8 @@ export default async function Home() {
     <>
       <Hero1 />
       <Services1 />
-      <Gallery />
       <Location />
+      <Gallery />
       <CallToAction />
       <Footer />
     </>
