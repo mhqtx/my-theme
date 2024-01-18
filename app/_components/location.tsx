@@ -1,40 +1,40 @@
+import { Button } from "@/app/_components/button";
 import { useContent } from "@/app/_hooks/use-content";
 
 export default async function Location() {
   const { workingHours } = useContent();
 
   return (
-    <div className="flex flex-col lg:flex-row text-black">
-      <div
-        className="w-full lg:w-1/2 p-2 lg:p-10 order-1"
-        style={{
-          backgroundImage: "radial-gradient(#a9a9a9 1px, #ffffff 1px)",
-          backgroundSize: "40px 40px",
-        }}
-      >
-        <h6 className="font-bold text-xl">Location</h6>
-        <div className="h-[1px] w-full bg-gradient-to-r from-black my-2" />
-        <div className="max-w-[400px] mb-2 mt-4">
-          <h5 className="font-bold">Belgrade, Serbia</h5>
-          <p className="text-sm">Krfska 26</p>
+    <div className="flex flex-col bg-white lg:flex-row">
+      <div className="order-1 w-full p-2 lg:w-1/2 lg:p-10">
+        <div className="mb-10">
+          <h2 className="text-3xl font-bold">Location</h2>
+          <div className="my-2 h-[1px] w-full bg-gradient-to-r from-black" />
+          <p className="mt-1 text-lg md:text-xl">Belgrade, Serbia</p>
+          <p className="mb-4 text-lg md:text-xl">Krfska 26</p>
+          <Button>Get directions</Button>
+          <div className="mt-4">
+            <h2 className="text-3xl font-bold">Working hours</h2>
+            <div className="my-2 h-[1px] w-full bg-gradient-to-r from-black" />
+            <div className="mb-4">
+              {Object.entries(workingHours).map(([key, value]) => (
+                <p key={key}>
+                  <span className="font-bold capitalize">{key}</span> {value}
+                </p>
+              ))}
+            </div>
+          </div>
+          <div className="mt-4">
+            <h2 className="text-3xl font-bold">Contact</h2>
+            <div className="my-2 h-[1px] w-full bg-gradient-to-r from-black" />
+            <div className="mb-4 mt-2">
+              <p>+381629630157 - Milan</p>
+            </div>
+            <Button>Call now</Button>
+          </div>
         </div>
-        {/* TODO: Add CTAs */}
-        <p>
-          <span className="font-bold">+381629630157</span> - Milan
-        </p>
-        <p>
-          <span className="font-bold">+381629630157</span> - Neshka
-        </p>
-        {/* <Socials /> */}
-        <h6 className="font-bold text-xl mt-4">Working hours</h6>
-        <div className="h-[1px] w-full bg-gradient-to-r from-black my-2" />
-        {Object.entries(workingHours).map(([key, value]) => (
-          <p key={key}>
-            <span className="font-bold capitalize">{key}</span> {value}
-          </p>
-        ))}
       </div>
-      <div className="w-full lg-w-1/2">
+      <div className="lg-w-1/2 w-full">
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2830.858579285921!2d20.489992776238196!3d44.80407067107078!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475a7083f03126e3%3A0x6639fb364a2e1693!2sQuantox%20Technology!5e0!3m2!1sen!2srs!4v1705230179211!5m2!1sen!2srs"
           width="100%"

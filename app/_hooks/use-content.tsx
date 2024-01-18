@@ -45,48 +45,40 @@ export function useContent() {
     email: "milan.hakaj@gmail.com",
     services: {
       description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus expedite.",
-      title: "Who we are",
+        "In today's fast-paced digital landscape, unlocking your business potential begins with establishing a compelling online presence. Our mission is to empower your small business by offering you more than just a website – we provide the key to a dynamic and flourishing online identity.",
+      title:
+        "Unlock Your Business Potential: Enjoy the Benefits of a Dynamic Online Presence",
       items: [
         {
-          title: "Code Reviews",
+          title: "Cost-Efficiency",
           description:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus expedite.",
+            "Propel your business forward affordably with our unbeatable value, providing budget-friendly solutions for a professional website tailored specifically for small businesses.",
         },
         {
-          title: "Pull request",
+          title: "Strategic brand elevation",
           description:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus expedite.",
+            "Elevate your brand effortlessly in the digital world. Showcase your products and services with a sleek online presence that leaves a lasting impression on your audience",
         },
         {
-          title: "Design requirements",
+          title: "Tailored for success",
           description:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus expedite.",
+            "Our websites are crafted specifically for small businesses, ensuring a perfect fit for your unique needs. Experience the power of a tailored online platform that aligns seamlessly with your brand identity",
         },
         {
-          title: "Assessments",
+          title: "User-friendly interfaces",
           description:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus expedite.",
+            "Navigate the digital landscape with ease. Our websites are designed with a user-friendly interface, providing a seamless experience for both you and your customers",
+        },
+
+        {
+          title: "Visibility & Reach",
+          description:
+            "Expand your reach and enhance your visibility. With our online solutions, you can tap into a wider audience and connect with potential customers, giving your business the exposure it deserves",
         },
         {
-          title: "Flyers",
+          title: "Fulltime support",
           description:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus expedite.",
-        },
-        {
-          title: "Posters",
-          description:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus expedite.",
-        },
-        {
-          title: "Business cards",
-          description:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus expedite.",
-        },
-        {
-          title: "Parallel coding",
-          description:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus expedite.",
+            "Propel your business forward affordably with our unbeatable value, providing budget-friendly solutions for a professional website tailored specifically for small businesses.",
         },
       ],
     },
