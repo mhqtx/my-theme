@@ -12,7 +12,7 @@ export function Gallery1() {
   const { gallery } = useContent();
 
   return (
-    <div className="px-2 py-10">
+    <div className="bg-[#fafafa] px-2 py-10">
       <div className="container">
         <div className="lg:w-1/2">
           <h2 className="text-3xl font-bold">Explore the Artistry</h2>
