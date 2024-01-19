@@ -11,7 +11,7 @@ export function useContent() {
       saturday: "10 - 19h",
       sunday: "/",
     },
-    title: "Web UI & Design",
+    title: "Digital Elegance for your Business",
     description:
       "Empower your small business with a sleek online presence at a fraction of the cost. Budget-friendly, professional websites tailored for small businesses. Elevate your brand effortlessly in the digital world.",
     ctaButton: {
@@ -43,6 +43,58 @@ export function useContent() {
     tel: "381629630157",
     owner: "Milan Hakaj",
     email: "milan.hakaj@gmail.com",
+    gallery: {
+      items: [
+        {
+          img: "https://example.com/image1.jpg",
+          title: "Embracing the sunset vibes 🌅",
+        },
+        {
+          img: "https://example.com/image2.jpg",
+          title: "Weekend adventures in full swing! 🚀",
+        },
+        {
+          img: "https://example.com/image3.jpg",
+          title: "Coffee and contemplation at my favorite spot ☕",
+        },
+        {
+          img: "https://example.com/image4.jpg",
+          title: "Lost in the beauty of nature 🌳",
+        },
+        {
+          img: "https://example.com/image5.jpg",
+          title: "Chasing dreams under city lights 🌃",
+        },
+        {
+          img: "https://example.com/image6.jpg",
+          title: "Cozy vibes with a good book 📚",
+        },
+        {
+          img: "https://example.com/image7.jpg",
+          title: "Exploring hidden gems in the city 🏙️",
+        },
+        {
+          img: "https://example.com/image8.jpg",
+          title: "Homemade delights for a perfect evening 🍲",
+        },
+        {
+          img: "https://example.com/image9.jpg",
+          title: "Art and inspiration collide on canvas 🎨",
+        },
+        {
+          img: "https://example.com/image10.jpg",
+          title: "Sunrise yoga for a mindful start to the day 🧘‍♂️",
+        },
+        {
+          img: "https://example.com/image11.jpg",
+          title: "Dive into the colors of a bustling street market 🎉",
+        },
+        {
+          img: "https://example.com/image12.jpg",
+          title: "Sundays are for self-care and smiles 😊",
+        },
+      ],
+    },
     services: {
       description:
         "In today's fast-paced digital landscape, unlocking your business potential begins with establishing a compelling online presence. Our mission is to empower your small business by offering you more than just a website – we provide the key to a dynamic and flourishing online identity.",

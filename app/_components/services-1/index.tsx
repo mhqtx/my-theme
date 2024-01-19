@@ -11,6 +11,7 @@ export function Services1() {
     <div className="flex bg-[#f7f7f7] px-2 py-10 lg:py-10">
       <div className="container xl:flex xl:space-x-10">
         <div className="mb-10 xl:w-[35%]">
+          {/* TODO: Add photo here? */}
           <h2 className="text-3xl font-bold">{title}</h2>
           <p className="mb-4 mt-3 text-lg md:text-xl">{description}</p>
           <Button>Call us now</Button>

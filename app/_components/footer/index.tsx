@@ -21,7 +21,7 @@ export function Footer() {
 
   return (
     // TODO: Define paddings
-    <div className="bg-5 w-full bg-black bg-hero-dark p-2 text-white lg:p-4">
+    <div className="w-full bg-black bg-hero-dark bg-5 p-2 text-white lg:p-4">
       <div className="container">
         <LogoWhite />
         <div className="mt-4 flex w-full flex-col lg:flex-row">
