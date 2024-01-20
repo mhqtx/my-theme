@@ -19,7 +19,10 @@ export async function Hero1() {
             <div>
               <h1 className="text-3xl font-bold">{title}</h1>
               <p className="mb-4 mt-3 text-lg md:text-xl">{description}</p>
-              <Button>{ctaButton.text}</Button>
+              <div className="mt-4 space-x-1">
+                <Button>Call us</Button>
+                <Button variant="secondary">Read more</Button>
+              </div>
             </div>
           </div>
           <div className="hidden w-1/2 justify-center text-center lg:flex lg:items-center">

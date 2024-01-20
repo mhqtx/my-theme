@@ -96,7 +96,7 @@ export function Location1() {
 
             <div className="mt-4 space-x-1">
               <Button>Get directions</Button>
-              <Button>Call us</Button>
+              <Button variant="secondary">Call us</Button>
             </div>
           </div>
         </div>
