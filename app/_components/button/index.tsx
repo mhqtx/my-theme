@@ -9,15 +9,19 @@ interface Props extends ComponentPropsWithoutRef<"button"> {
   variant?: "primary" | "secondary";
 }
 
-export function Button({ children, variant = "primary" }: Props) {
+export function Button({ children, className, variant = "primary" }: Props) {
   return (
     <motion.button
       whileHover={{ scale: 1.1 }}
       transition={{ type: "spring", stiffness: 400, damping: 10 }}
-      className={c("h-6 rounded-full px-2 font-medium", {
-        "bg-black text-white": variant === "primary",
-        "border border-black text-black": variant === "secondary",
-      })}
+      className={c(
+        "inline-flex h-6 items-center space-x-1 rounded-full px-2 font-medium",
+        {
+          "bg-black text-white": variant === "primary",
+          "border border-black text-black": variant === "secondary",
+        },
+        className,
+      )}
       // TODO: Add action
     >
       {children}
