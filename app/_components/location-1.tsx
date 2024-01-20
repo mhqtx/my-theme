@@ -13,7 +13,6 @@ export function Location1() {
             We are here to help. Wherever you are, Vercel Client Advisors will
             be delighted to assist you
           </p>
-
           <div className="mb-2">
             <h6 className="text-md mb-1 flex">
               <svg

@@ -37,27 +37,27 @@ body {
   margin-left: auto;
 }
 @media (min-width: 640px) {
-  .container {
+  .container-half {
     max-width: 320px;
   }
 }
 @media (min-width: 768px) {
-  .container {
+  .container-half {
     max-width: 384px;
   }
 }
 @media (min-width: 1024px) {
-  .container {
+  .container-half {
     max-width: 512px;
   }
 }
 @media (min-width: 1280px) {
-  .container {
+  .container-half {
     max-width: 640px;
   }
 }
 @media (min-width: 1536px) {
-  .container {
+  .container-half {
     max-width: 768px;
   }
 }
