@@ -31,19 +31,20 @@ body {
   background-image: "radial-gradient(#a9a9a9 1px, #ffffff 1px)";
 }
 
+/* TODO: Investigate */
 .container-half {
-  width: 50%;
+  width: 100%;
   margin-right: auto;
   margin-left: auto;
 }
 @media (min-width: 640px) {
   .container-half {
-    max-width: 320px;
+    max-width: 640px;
   }
 }
 @media (min-width: 768px) {
   .container-half {
-    max-width: 384px;
+    max-width: 768px;
   }
 }
 @media (min-width: 1024px) {
