@@ -12,7 +12,7 @@ export function Gallery1() {
   const { gallery } = useContent();
 
   return (
-    <div className="bg-[#f7f7f7] px-2 py-10">
+    <section className="px-2 py-10">
       <div className="container">
         <div className="lg:w-1/2">
           <h2 className="text-3xl font-bold">Explore the Artistry</h2>
@@ -46,9 +46,16 @@ export function Gallery1() {
       </Swiper>
 
       <div className="container">
-        <h5 className="mb-1 font-bold">Connect with us</h5>
+        <h3 className="mb-1 text-2xl font-bold">
+          Dive deeper into the narrative on our socials
+        </h3>
+        <p className="mb-2 lg:w-1/2">
+          Embarking on a creative journey that transcends boundaries and
+          explores the extraordinary. Join me on this exciting adventure, where
+          passion meets innovation.
+        </p>
         <Socials />
       </div>
-    </div>
+    </section>
   );
 }
