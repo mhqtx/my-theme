@@ -9,8 +9,8 @@ export default async function Home() {
   return (
     <>
       <Hero1 />
-      <Services1 />
       <Gallery1 />
+      <Services1 />
       <Location1 />
       <CallToAction1 />
       <Footer />
