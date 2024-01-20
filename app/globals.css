@@ -30,3 +30,34 @@ body {
   background-size: "32px 32px";
   background-image: "radial-gradient(#a9a9a9 1px, #ffffff 1px)";
 }
+
+.container-half {
+  width: 50%;
+  margin-right: auto;
+  margin-left: auto;
+}
+@media (min-width: 640px) {
+  .container {
+    max-width: 320px;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    max-width: 384px;
+  }
+}
+@media (min-width: 1024px) {
+  .container {
+    max-width: 512px;
+  }
+}
+@media (min-width: 1280px) {
+  .container {
+    max-width: 640px;
+  }
+}
+@media (min-width: 1536px) {
+  .container {
+    max-width: 768px;
+  }
+}
