@@ -18,7 +18,7 @@ export function Button({ children, className, variant = "primary" }: Props) {
         "inline-flex h-6 items-center space-x-1 truncate rounded-full px-2 font-medium",
         {
           "bg-black text-white": variant === "primary",
-          "border border-black text-black": variant === "secondary",
+          "border border-black bg-white text-black": variant === "secondary",
         },
         className,
       )}
