@@ -30,7 +30,7 @@ export default async function Home() {
         description={description}
         cta={
           <>
-            <Button>Call us</Button>
+            <Button>Buy $29/month</Button>
             <Button variant="secondary">Read more</Button>
           </>
         }
