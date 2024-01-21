@@ -82,7 +82,7 @@ export default function RootLayout({
         <Providers>
           <Nav />
           {children}
-          <Notify />
+          {/* <Notify /> */}
         </Providers>
       </body>
     </html>
