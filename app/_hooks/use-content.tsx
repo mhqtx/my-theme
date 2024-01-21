@@ -12,7 +12,8 @@ export function useContent() {
       sunday: "/",
     },
     name: "Estro",
-    title: "Digital Elegance for your Business",
+    title:
+      "Unlock Your Business Potential & Enjoy the Benefits of a Dynamic Online Presence",
     description:
       "Empower your small business with a sleek online presence at a fraction of the cost. Budget-friendly, professional websites tailored for small businesses. Elevate your brand effortlessly in the digital world.",
     ctaButton: {

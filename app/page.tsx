@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { ComponentPropsWithoutRef } from "react";
 
 import { Hero1 } from "@/app/_components/hero/hero-1";
@@ -29,7 +28,6 @@ export default async function Home() {
       <Hero1
         title={title}
         description={description}
-        name={name}
         cta={
           <>
             <Button>Call us</Button>
@@ -37,14 +35,19 @@ export default async function Home() {
           </>
         }
         media={
-          // TODO: Place a very short video from /_videos dir
-          <Image
-            alt={`Welcome to ${name}`}
-            className="w-[80%] rounded-xl"
-            src="https://images.pexels.com/photos/577585/pexels-photo-577585.jpeg?auto=compress&cs=tinysrgb&w=800&h=533&dpr=2"
-            width={800}
-            height={533}
-          />
+          <video
+            width="100%"
+            height="288px"
+            className="pointer-events-none rounded-xl"
+            controls
+            loop
+            autoPlay
+            muted
+            playsInline
+          >
+            <source src="/assets/videos/hero.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
         }
       />
       <Gallery1
