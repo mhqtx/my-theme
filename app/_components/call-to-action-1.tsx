@@ -3,7 +3,7 @@ import { Button } from "@/app/_components/button";
 // TODO: Tidy up everything, use proper html tags, split into components, use data from content hook
 export function CallToAction1() {
   return (
-    <section className="w-full px-2 py-10">
+    <section className="w-full bg-[#f7f7f7] px-2 py-10">
       <div className="container text-center lg:w-1/2">
         <span className="mx-auto flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-black text-3xl font-bold text-white">
           <svg
