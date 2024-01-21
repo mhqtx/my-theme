@@ -4,14 +4,25 @@ import { ComponentPropsWithoutRef } from "react";
 import { Hero1 } from "@/app/_components/hero/hero-1";
 import { Gallery1 } from "@/app/_components/gallery-1";
 import { Footer } from "@/app/_components/footer";
-import { Services1 } from "@/app/_components/services-1";
+import { Services1 } from "@/app/_components/services";
 import { CallToAction1 } from "@/app/_components/call-to-action-1";
 import { Location1 } from "@/app/_components/location-1";
 import { useContent } from "@/app/_hooks/use-content";
 import { Button } from "@/app/_components/button";
 
 export default async function Home() {
-  const { title, description, name } = useContent();
+  const {
+    // Hero
+    title,
+    description,
+    name,
+
+    // Gallery
+    gallery,
+
+    // Services
+    services: { title: serviceTitle, text: serviceText, items: serviceItems },
+  } = useContent();
 
   return (
     <>
@@ -36,8 +47,23 @@ export default async function Home() {
           />
         }
       />
-      <Gallery1 />
-      <Services1 />
+      <Gallery1
+        items={gallery.items}
+        section1={{
+          title: "Explore the Artistry",
+          text: "Immerse yourself in a captivating visual journey through our Gallery, showcasing a curated collection of meticulously crafted web development projects. Uncover the seamless fusion of design and functionality in our horizontal image gallery, a testament to our passion for creating digital masterpieces",
+        }}
+        section2={{
+          title: "Dive deeper into the narrative on our socials",
+          text: "Embarking on a creative journey that transcends boundaries and explores the extraordinary. Join me on this exciting adventure, where passion meets innovation.",
+        }}
+      />
+      <Services1
+        title={serviceTitle}
+        text={serviceText}
+        cta={<Button>Call us</Button>}
+        items={serviceItems}
+      />
       <Location1 />
       <CallToAction1
         icon={<IconStack className="size-5" />}

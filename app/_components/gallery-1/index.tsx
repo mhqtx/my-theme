@@ -4,35 +4,35 @@ import Image from "next/image";
 
 import { Swiper, SwiperSlide } from "@/app/_components/swiper";
 import Socials from "@/app/_components/socials";
-import { useContent } from "@/app/_hooks/use-content";
 
 import GalleryImg from "../../_images/gallery/gallery-1.png";
 
-export function Gallery1() {
-  const { gallery } = useContent();
+type Section = { title: string; text: string };
 
+interface Props {
+  section1: Section;
+  section2: Section;
+  items: any[];
+}
+
+export function Gallery1({ section1, section2, items }: Props) {
   return (
     <section className="bg-grays-1 px-2 py-10">
       <div className="container">
         <div className="lg:w-1/2">
-          <h2 className="text-3xl font-bold">Explore the Artistry</h2>
-          <p className="mt-3 text-lg md:text-xl">
-            Immerse yourself in a captivating visual journey through our
-            Gallery, showcasing a curated collection of meticulously crafted web
-            development projects. Uncover the seamless fusion of design and
-            functionality in our horizontal image gallery, a testament to our
-            passion for creating digital masterpieces
-          </p>
+          <h2 className="text-3xl font-bold">{section1.title}</h2>
+          <p className="mt-3 text-lg md:text-xl">{section1.text}</p>
         </div>
       </div>
 
       <Swiper className="my-4 lg:my-8">
-        {gallery.items.map((item, index) => (
+        {items.map((item, index) => (
           <SwiperSlide key={index} className="!w-fit">
             <div className="relative h-[467px] w-[275px] rounded-xl bg-red-50">
               <Image
                 alt="Hero wallpaper"
-                className="h-full w-full rounded-xl  object-cover"
+                className="h-full w-full rounded-xl object-cover"
+                // TODO: Replace img
                 src={GalleryImg}
                 width={600}
                 height={200}
@@ -46,15 +46,11 @@ export function Gallery1() {
       </Swiper>
 
       <div className="container">
-        <h3 className="mb-1 text-2xl font-bold">
-          Dive deeper into the narrative on our socials
-        </h3>
-        <p className="mb-2 lg:w-1/2">
-          Embarking on a creative journey that transcends boundaries and
-          explores the extraordinary. Join me on this exciting adventure, where
-          passion meets innovation.
-        </p>
-        <Socials />
+        <div className="lg:w-1/2">
+          <h3 className="mb-1 text-2xl font-bold">{section2.title}</h3>
+          <p className="mb-3">{section2.text}</p>
+          <Socials />
+        </div>
       </div>
     </section>
   );

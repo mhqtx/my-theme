@@ -47,7 +47,7 @@ export function useContent() {
     gallery: {
       items: [
         {
-          img: "https://example.com/image1.jpg",
+          img: "https://randomwordgenerator.com/img/picture-generator/55e2dd474a50b10ff3d8992cc12c30771037dbf85254794e70267cdd9444_640.jpg",
           title: "Embracing the sunset vibes 🌅",
         },
         {
@@ -97,41 +97,34 @@ export function useContent() {
       ],
     },
     services: {
-      description:
-        "In today's fast-paced digital landscape, unlocking your business potential begins with establishing a compelling online presence. Our mission is to empower your small business by offering you more than just a website – we provide the key to a dynamic and flourishing online identity.",
+      text: "In today's fast-paced digital landscape, unlocking your business potential begins with establishing a compelling online presence. Our mission is to empower your small business by offering you more than just a website – we provide the key to a dynamic and flourishing online identity.",
       title:
         "Unlock Your Business Potential: Enjoy the Benefits of a Dynamic Online Presence",
       items: [
         {
           title: "Cost-Efficiency",
-          description:
-            "Propel your business forward affordably with our unbeatable value, providing budget-friendly solutions for a professional website tailored specifically for small businesses.",
+          text: "Propel your business forward affordably with our unbeatable value, providing budget-friendly solutions for a professional website tailored specifically for small businesses.",
         },
         {
           title: "Strategic brand elevation",
-          description:
-            "Elevate your brand effortlessly in the digital world. Showcase your products and services with a sleek online presence that leaves a lasting impression on your audience",
+          text: "Elevate your brand effortlessly in the digital world. Showcase your products and services with a sleek online presence that leaves a lasting impression on your audience",
         },
         {
           title: "Tailored for success",
-          description:
-            "Our websites are crafted specifically for small businesses, ensuring a perfect fit for your unique needs. Experience the power of a tailored online platform that aligns seamlessly with your brand identity",
+          text: "Our websites are crafted specifically for small businesses, ensuring a perfect fit for your unique needs. Experience the power of a tailored online platform that aligns seamlessly with your brand identity",
         },
         {
           title: "User-friendly interfaces",
-          description:
-            "Navigate the digital landscape with ease. Our websites are designed with a user-friendly interface, providing a seamless experience for both you and your customers",
+          text: "Navigate the digital landscape with ease. Our websites are designed with a user-friendly interface, providing a seamless experience for both you and your customers",
         },
 
         {
           title: "Visibility & Reach",
-          description:
-            "Expand your reach and enhance your visibility. With our online solutions, you can tap into a wider audience and connect with potential customers, giving your business the exposure it deserves",
+          text: "Expand your reach and enhance your visibility. With our online solutions, you can tap into a wider audience and connect with potential customers, giving your business the exposure it deserves",
         },
         {
           title: "Fulltime support",
-          description:
-            "Propel your business forward affordably with our unbeatable value, providing budget-friendly solutions for a professional website tailored specifically for small businesses.",
+          text: "Propel your business forward affordably with our unbeatable value, providing budget-friendly solutions for a professional website tailored specifically for small businesses.",
         },
       ],
     },
