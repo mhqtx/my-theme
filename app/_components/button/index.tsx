@@ -15,7 +15,7 @@ export function Button({ children, className, variant = "primary" }: Props) {
       whileHover={{ scale: 1.1 }}
       transition={{ type: "spring", stiffness: 400, damping: 10 }}
       className={c(
-        "inline-flex h-6 items-center space-x-1 rounded-full px-2 font-medium",
+        "inline-flex h-6 items-center space-x-1 truncate rounded-full px-2 font-medium",
         {
           "bg-black text-white": variant === "primary",
           "border border-black text-black": variant === "secondary",
