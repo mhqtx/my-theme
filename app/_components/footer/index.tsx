@@ -109,6 +109,16 @@ export function Footer() {
           </div>
           <div className="flex w-full flex-col lg:w-[calc(100%-400px)] lg:flex-row  lg:[&>div]:mx-3">
             <div className="mb-4 mt-4 max-w-[400px] lg:mt-0">
+              <h5 className="mb-2 font-bold">Contact</h5>
+              <div className="flex flex-col">
+                {serviceItems.map((item) => (
+                  <p key={item.title} className="mb-0.5 w-full text-sm">
+                    {item.title}
+                  </p>
+                ))}
+              </div>
+            </div>
+            <div className="mb-4 mt-4 max-w-[400px] lg:mt-0">
               <h5 className="mb-2 font-bold">Services</h5>
               <div className="flex flex-col">
                 {serviceItems.map((item) => (

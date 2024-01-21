@@ -68,28 +68,45 @@ export default function Nav() {
             />
           </a>
           <div className="flex items-center">
-            <div className="hidden sm:flex">
+            {/* <div className="hidden sm:flex">
               <Socials />
-            </div>
-            <span className="mx-2 hidden text-black/10 sm:flex">|</span>
+            </div> */}
+            {/* <span className="mx-2 hidden text-black/10 sm:flex">|</span> */}
             <button
               onClick={() => setIsDropdownOpened((prev) => !prev)}
               className="flex h-5 items-center justify-center space-x-1 font-bold text-black"
             >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke-width="1.5"
-                stroke="currentColor"
-                className="h-3 w-3"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
-                />
-              </svg>
+              {isDropdownOpened ? (
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth={1.5}
+                  stroke="currentColor"
+                  className="h-3 w-3"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M6 18 18 6M6 6l12 12"
+                  />
+                </svg>
+              ) : (
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  className="h-3 w-3"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+                  />
+                </svg>
+              )}
             </button>
           </div>
         </div>

@@ -11,7 +11,7 @@ export function useContent() {
       saturday: "10 - 19h",
       sunday: "/",
     },
-    title: "Digital Elegance for your Business",
+    title: "Estro: Digital Elegance for your Business",
     description:
       "Empower your small business with a sleek online presence at a fraction of the cost. Budget-friendly, professional websites tailored for small businesses. Elevate your brand effortlessly in the digital world.",
     ctaButton: {
