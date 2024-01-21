@@ -8,7 +8,7 @@ export function Services1() {
   } = useContent();
 
   return (
-    <div className="flex bg-[#f7f7f7] px-2 py-10 lg:py-10">
+    <div className="bg-grays-1 flex px-2 py-10 lg:py-10">
       <div className="container xl:flex xl:space-x-10">
         <div className="mb-10 xl:w-[35%]">
           {/* TODO: Add photo here? */}

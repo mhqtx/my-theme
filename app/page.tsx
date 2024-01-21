@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { ComponentPropsWithoutRef } from "react";
 
 import { Hero1 } from "@/app/_components/hero/hero-1";
 import { Gallery1 } from "@/app/_components/gallery-1";
@@ -38,8 +39,39 @@ export default async function Home() {
       <Gallery1 />
       <Services1 />
       <Location1 />
-      <CallToAction1 />
+      <CallToAction1
+        icon={<IconStack className="size-5" />}
+        title={
+          <>
+            <span className="font-bold">One-Click Importable</span> Starter
+            Sites
+          </>
+        }
+        text="Blueprint comes with nine pre-configured demos that you may use as a
+          starting point for your new blog or magazine. You may activate a demo
+          on an existing website without importing dummy content too."
+        cta={<Button>Request demo</Button>}
+      />
       <Footer />
     </>
+  );
+}
+
+function IconStack(props: ComponentPropsWithoutRef<"svg">) {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      fill="none"
+      viewBox="0 0 24 24"
+      strokeWidth={1.5}
+      stroke="currentColor"
+      {...props}
+    >
+      <path
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        d="M6.429 9.75 2.25 12l4.179 2.25m0-4.5 5.571 3 5.571-3m-11.142 0L2.25 7.5 12 2.25l9.75 5.25-4.179 2.25m0 0L21.75 12l-4.179 2.25m0 0 4.179 2.25L12 21.75 2.25 16.5l4.179-2.25m11.142 0-5.571 3-5.571-3"
+      />
+    </svg>
   );
 }

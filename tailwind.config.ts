@@ -29,6 +29,9 @@ const config: Config = {
       },
       colors: {
         main: "#faf0e6",
+        grays: {
+          1: "#f7f7f7",
+        },
       },
       spacing: {
         "1": "8px",
