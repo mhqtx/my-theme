@@ -31,6 +31,7 @@ const config: Config = {
         main: "#faf0e6",
         grays: {
           1: "#f7f7f7",
+          2: "#2b2b2b",
         },
       },
       spacing: {

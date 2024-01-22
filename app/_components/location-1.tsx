@@ -16,6 +16,7 @@ export function Location1() {
             </p>
             <div className="mb-4">
               <h6 className="text-md mb-1 flex">
+                <span>Location</span>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
@@ -35,7 +36,6 @@ export function Location1() {
                     d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z"
                   />
                 </svg>
-                <span>Location</span>
               </h6>
               <h6 className="text-md mb-1 flex items-start">
                 <div className="flex flex-col">
@@ -47,6 +47,7 @@ export function Location1() {
             </div>
 
             <h6 className="text-md mb-1 flex">
+              <span>Working hours</span>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
@@ -61,7 +62,6 @@ export function Location1() {
                   d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
                 />
               </svg>
-              <span>Working hours</span>
             </h6>
             {Object.entries(workingHours).map(([key, value]) => (
               <p key={key}>

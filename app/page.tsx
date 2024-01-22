@@ -2,7 +2,7 @@ import { ComponentPropsWithoutRef } from "react";
 
 import { Hero1 } from "@/app/_components/hero/hero-1";
 import { Gallery1 } from "@/app/_components/gallery-1";
-import { Footer } from "@/app/_components/footer";
+import { Footer1 } from "@/app/_components/footer-1";
 import { Services1 } from "@/app/_components/services";
 import { CallToAction1 } from "@/app/_components/call-to-action-1";
 import { Location1 } from "@/app/_components/location-1";
@@ -21,6 +21,12 @@ export default async function Home() {
 
     // Services
     services: { title: serviceTitle, text: serviceText, items: serviceItems },
+
+    // Menu items
+    menu: { items: menuItems },
+
+    // Footer
+    workingHours,
   } = useContent();
 
   return (
@@ -81,7 +87,17 @@ export default async function Home() {
           on an existing website without importing dummy content too."
         cta={<Button>Request demo</Button>}
       />
-      <Footer />
+      <Footer1
+        title="Unlock Your Business Potential & Enjoy the Benefits of a Dynamic Online Presence"
+        description="Empower your small business with a sleek online presence at a fraction of the cost. Budget-friendly, professional websites tailored for small businesses. Elevate your brand effortlessly in the digital world."
+        brandName="Estro UI"
+        workingHours={Object.entries(workingHours)}
+        services={serviceItems}
+        menu={menuItems}
+        email="milan.hakaj@estroui.com"
+        phone="+381629630157"
+        address="Mihajla Pupina 69, Belgrade"
+      />
     </>
   );
 }
