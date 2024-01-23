@@ -8,6 +8,7 @@ import { CallToAction1 } from "@/app/_components/call-to-action-1";
 import { Location1 } from "@/app/_components/location-1";
 import { useContent } from "@/app/_hooks/use-content";
 import { Button } from "@/app/_components/button";
+import { About1 } from "@/app/_components/about-1";
 
 export default async function Home() {
   const {
@@ -54,6 +55,37 @@ export default async function Home() {
             <source src="/assets/videos/hero.mp4" type="video/mp4" />
             Your browser does not support the video tag.
           </video>
+        }
+      />
+      <About1
+        title="Tailored Websites. Customized Solutions. Pixel-perfect design."
+        description={
+          <>
+            <p>
+              True Luxury Villas has been our passion since 2002. What started
+              with a few excellent villas and chalets quickly grew to a sizeable
+              portfolio. Always keeping one important rule: only we decide which
+              Villa goes up and meets the standards of our curation.
+            </p>
+            <p>
+              Standards which have influenced the industry at a notable scale.
+              Nobody can just list their villa with us or book a spot. All
+              properties are completely visited, vetted, categorised and
+              documented.
+            </p>
+            <p>
+              If a villa has made it into our portfolio it has accomplished a
+              milestone. But the most important part is what happens when you
+              arrive and when you actually stay there. In other words: The
+              Service on site.
+            </p>
+            <p>
+              Your perfect Villa Holiday is our mission - nothing else. Contact
+              us at any time through one of the many different channels on
+              offer.
+            </p>
+            <p>Villa goes up and meets the standards of our curation.</p>
+          </>
         }
       />
       <Gallery1

@@ -1,15 +1,20 @@
 "use client";
 
 import c from "clsx";
-import { motion } from "framer-motion";
-import { ComponentPropsWithoutRef, ReactNode } from "react";
+import { HTMLMotionProps, motion } from "framer-motion";
+import { ReactNode } from "react";
 
-interface Props extends ComponentPropsWithoutRef<"button"> {
+interface Props extends HTMLMotionProps<"button"> {
   children: ReactNode;
   variant?: "primary" | "secondary";
 }
 
-export function Button({ children, className, variant = "primary" }: Props) {
+export function Button({
+  children,
+  className,
+  variant = "primary",
+  ...rest
+}: Props) {
   return (
     <motion.button
       whileHover={{ scale: 1.1 }}
@@ -23,6 +28,7 @@ export function Button({ children, className, variant = "primary" }: Props) {
         className,
       )}
       // TODO: Add action
+      {...rest}
     >
       {children}
     </motion.button>
