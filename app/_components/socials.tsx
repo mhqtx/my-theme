@@ -14,7 +14,7 @@ export default function Socials({ iconWrapperClassName }: Props) {
   const { socials } = useContent();
 
   return (
-    <div className="flex items-center space-x-0.5">
+    <div className="inline-flex items-center space-x-0.5">
       {socials.map((icon) => (
         // TODO: Check reduce bundle size:https://www.framer.com/motion/guide-reduce-bundle-size/
         <motion.a

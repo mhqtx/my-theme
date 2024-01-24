@@ -4,11 +4,12 @@ import { Hero1 } from "@/app/_components/hero/hero-1";
 import { Gallery1 } from "@/app/_components/gallery-1";
 import { Footer1 } from "@/app/_components/footer-1";
 import { Services1 } from "@/app/_components/services";
-import { CallToAction1 } from "@/app/_components/call-to-action-1";
+import { CallToAction1 } from "@/app/_components/call-to-action/call-to-action-1";
 import { Location1 } from "@/app/_components/location-1";
 import { useContent } from "@/app/_hooks/use-content";
 import { Button } from "@/app/_components/button";
 import { About1 } from "@/app/_components/about-1";
+import Socials from "@/app/_components/socials";
 
 export default async function Home() {
   const {
@@ -127,6 +128,16 @@ export default async function Home() {
           title: "Dive deeper into the narrative on our socials",
           text: "Embarking on a creative journey that transcends boundaries and explores the extraordinary. Join me on this exciting adventure, where passion meets innovation.",
         }}
+      />
+      <CallToAction1
+        className="bg-[#ffe2ff]"
+        title={
+          <strong className="font-bold">
+            Connect with Us: Unleash the Power of Our Social Presence
+          </strong>
+        }
+        text="Dive into our digital realm! Follow, like, and stay connected with us on our social networks. Explore the latest updates, behind-the-scenes, and vibrant conversations."
+        cta={<Socials />}
       />
       <Services1
         title={serviceTitle}
