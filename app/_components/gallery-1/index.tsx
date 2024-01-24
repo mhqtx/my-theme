@@ -4,6 +4,7 @@ import Image from "next/image";
 
 import { Swiper, SwiperSlide } from "@/app/_components/swiper";
 import Socials from "@/app/_components/socials";
+import { Button } from "@/app/_components/button";
 
 type Section = { title: string; text: string };
 
@@ -64,7 +65,7 @@ export function Gallery1({ section1, section2, items }: Props) {
         <div className="lg:w-1/2">
           <h3 className="mb-1 text-2xl font-bold">{section2.title}</h3>
           <p className="mb-3">{section2.text}</p>
-          <Socials />
+          <Button>Inquire</Button>
         </div>
       </div>
     </section>

@@ -119,6 +119,11 @@ export default async function Home() {
             src: "/assets/videos/gallery/item-6.mp4",
             type: "video",
           },
+          {
+            title: "Navigating with ease and excitement 🏄‍♂️",
+            src: "/assets/videos/gallery/item-7.mp4",
+            type: "video",
+          },
         ]}
         section1={{
           title: "Web Wonders: A Showcase of Our Digital Craftsmanship",
@@ -133,7 +138,7 @@ export default async function Home() {
         className="bg-[#ffe2ff]"
         title={
           <strong className="font-bold">
-            Connect with Us: Unleash the Power of Our Social Presence
+            Unleash the Power of Our Social Presence
           </strong>
         }
         text="Dive into our digital realm! Follow, like, and stay connected with us on our social networks. Explore the latest updates, behind-the-scenes, and vibrant conversations."
