@@ -5,8 +5,6 @@ import Image from "next/image";
 import { Swiper, SwiperSlide } from "@/app/_components/swiper";
 import Socials from "@/app/_components/socials";
 
-import GalleryImg from "../../_images/gallery/gallery-1.png";
-
 type Section = { title: string; text: string };
 
 interface Props {
@@ -28,15 +26,32 @@ export function Gallery1({ section1, section2, items }: Props) {
       <Swiper className="my-4 lg:my-8">
         {items.map((item, index) => (
           <SwiperSlide key={index} className="!w-fit">
-            <div className="relative h-[467px] w-[275px] rounded-xl bg-red-50">
-              <Image
-                alt="Hero wallpaper"
-                className="h-full w-full rounded-xl object-cover"
-                // TODO: Replace img
-                src={GalleryImg}
-                width={600}
-                height={200}
-              />
+            <div className="relative h-[489px] w-[275px] rounded-xl bg-red-50">
+              {item.type === "image" ? (
+                <Image
+                  alt="Hero wallpaper"
+                  className="h-full w-full rounded-xl object-cover"
+                  // TODO: Replace img
+                  src={item.src}
+                  width={600}
+                  height={200}
+                />
+              ) : (
+                // TODO: Fix height
+                <video
+                  width="100%"
+                  height="100%"
+                  className="pointer-events-none rounded-xl"
+                  controls
+                  loop
+                  autoPlay
+                  muted
+                  playsInline
+                >
+                  <source src={item.src} type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
+              )}
               <div className="absolute top-0 w-full rounded-tl-xl rounded-tr-xl bg-gradient-to-b from-black/50 to-transparent p-2 pb-[50%] text-left text-white">
                 <h6 className="font-medium">{item.title}</h6>
               </div>

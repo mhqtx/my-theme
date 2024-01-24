@@ -17,9 +17,6 @@ export default async function Home() {
     description,
     name,
 
-    // Gallery
-    gallery,
-
     // Services
     services: { title: serviceTitle, text: serviceText, items: serviceItems },
 
@@ -89,9 +86,41 @@ export default async function Home() {
         }
       />
       <Gallery1
-        items={gallery.items}
+        items={[
+          {
+            title:
+              "Join Alex in the seamless journey through our platform, making waves of user satisfaction! 🚤:",
+            src: "/assets/videos/gallery/item-1.mp4",
+            type: "video",
+          },
+          {
+            title: "Turning clicks into magic effortlessly! 🎮",
+            src: "/assets/videos/gallery/item-2.mp4",
+            type: "video",
+          },
+          {
+            title: "Making waves of user satisfaction! 🚤",
+            src: "/assets/videos/gallery/item-3.mp4",
+            type: "video",
+          },
+          {
+            title: "Conquering complexity with ease! 💻",
+            src: "/assets/videos/gallery/item-4.mp4",
+            type: "video",
+          },
+          {
+            title: "Crafting visually stunning experiences! 🎨",
+            src: "/assets/videos/gallery/item-5.mp4",
+            type: "video",
+          },
+          {
+            title: "Navigating with ease and excitement 🏄‍♂️",
+            src: "/assets/videos/gallery/item-6.mp4",
+            type: "video",
+          },
+        ]}
         section1={{
-          title: "Explore the Artistry",
+          title: "Web Wonders: A Showcase of Our Digital Craftsmanship",
           text: "Immerse yourself in a captivating visual journey through our Gallery, showcasing a curated collection of meticulously crafted web development projects. Uncover the seamless fusion of design and functionality in our horizontal image gallery, a testament to our passion for creating digital masterpieces",
         }}
         section2={{
