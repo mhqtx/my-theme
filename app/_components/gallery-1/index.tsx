@@ -3,7 +3,6 @@
 import Image from "next/image";
 
 import { Swiper, SwiperSlide } from "@/app/_components/swiper";
-import Socials from "@/app/_components/socials";
 import { Button } from "@/app/_components/button";
 
 type Section = { title: string; text: string };
@@ -27,7 +26,7 @@ export function Gallery1({ section1, section2, items }: Props) {
       <Swiper className="my-4 lg:my-8">
         {items.map((item, index) => (
           <SwiperSlide key={index} className="!w-fit">
-            <div className="relative h-[489px] w-[275px] rounded-xl bg-red-50">
+            <div className="relative h-[489px] w-[275px] overflow-hidden rounded-xl bg-red-50">
               {item.type === "image" ? (
                 <Image
                   alt="Hero wallpaper"
@@ -40,8 +39,8 @@ export function Gallery1({ section1, section2, items }: Props) {
               ) : (
                 // TODO: Fix height
                 <video
-                  width="w-[275px]"
-                  height="h-[275px]"
+                  width="100%"
+                  height="100%"
                   className={`pointer-esvents-none rounded-xl video-${index}`}
                   loop
                   muted
@@ -53,12 +52,18 @@ export function Gallery1({ section1, section2, items }: Props) {
                 </video>
               )}
               <button
-                className="absolute left-1/2 top-1/2 z-10 -translate-x-1/2 -translate-y-1/2 text-white"
+                className={`absolute left-1/2 top-1/2 z-10 -translate-x-1/2 -translate-y-1/2 text-white play-button-${index}`}
                 onClick={() => {
+                  // TODO: Improve!!
                   const video = document.getElementsByClassName(
                     `video-${index}`,
                   )[0] as HTMLVideoElement;
+                  const playButton = document.getElementsByClassName(
+                    `play-button-${index}`,
+                  )[0] as HTMLButtonElement;
                   video.play();
+
+                  playButton.classList.add("hidden");
                 }}
               >
                 <svg
