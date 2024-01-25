@@ -45,9 +45,8 @@ export function Gallery1({ section1, section2, items }: Props) {
                   className={`pointer-esvents-none rounded-xl video-${index}`}
                   loop
                   muted
-                  preload="none"
+                  preload="metadata"
                   playsInline
-                  poster={`/assets/images/item-${++index}-poster.png`}
                 >
                   <source src={item.src} type="video/mp4" />
                   Your browser does not support the video tag.
@@ -57,7 +56,7 @@ export function Gallery1({ section1, section2, items }: Props) {
                 className="absolute left-1/2 top-1/2 z-10 -translate-x-1/2 -translate-y-1/2 text-white"
                 onClick={() => {
                   const video = document.getElementsByClassName(
-                    `video-${--index}`,
+                    `video-${index}`,
                   )[0] as HTMLVideoElement;
                   video.play();
                 }}
