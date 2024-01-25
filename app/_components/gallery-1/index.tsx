@@ -40,19 +40,41 @@ export function Gallery1({ section1, section2, items }: Props) {
               ) : (
                 // TODO: Fix height
                 <video
-                  width="100%"
-                  height="100%"
-                  className="pointer-events-none rounded-xl"
-                  controls
+                  width="w-[275px]"
+                  height="h-[275px]"
+                  className={`pointer-esvents-none rounded-xl video-${index}`}
                   loop
-                  autoPlay
                   muted
+                  preload="none"
                   playsInline
+                  poster={`/assets/images/item-${++index}-poster.png`}
                 >
                   <source src={item.src} type="video/mp4" />
                   Your browser does not support the video tag.
                 </video>
               )}
+              <button
+                className="absolute left-1/2 top-1/2 z-10 -translate-x-1/2 -translate-y-1/2 text-white"
+                onClick={() => {
+                  const video = document.getElementsByClassName(
+                    `video-${--index}`,
+                  )[0] as HTMLVideoElement;
+                  video.play();
+                }}
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  className="h-6 w-6"
+                >
+                  <path
+                    fillRule="evenodd"
+                    d="M4.5 5.653c0-1.427 1.529-2.33 2.779-1.643l11.54 6.347c1.295.712 1.295 2.573 0 3.286L7.28 19.99c-1.25.687-2.779-.217-2.779-1.643V5.653Z"
+                    clipRule="evenodd"
+                  />
+                </svg>
+              </button>
               <div className="absolute top-0 w-full rounded-tl-xl rounded-tr-xl bg-gradient-to-b from-black/50 to-transparent p-2 pb-[50%] text-left text-white">
                 <h6 className="font-medium">{item.title}</h6>
               </div>
