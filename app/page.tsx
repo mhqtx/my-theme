@@ -43,8 +43,7 @@ export default async function Home() {
           <video
             width="100%"
             height="288px"
-            className="pointer-events-none rounded-xl"
-            controls
+            className="rounded-xl"
             loop
             autoPlay
             muted
