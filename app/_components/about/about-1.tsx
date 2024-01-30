@@ -25,7 +25,7 @@ export function About1({ title, description }: Props) {
           <div className="mb-2 space-y-2 text-lg">{description}</div>
           {!textExpanded && (
             <>
-              <div className="from-foreground-about absolute bottom-0 left-0 h-[180px] w-full bg-gradient-to-t to-transparent lg:hidden"></div>
+              <div className="absolute bottom-0 left-0 h-[180px] w-full bg-gradient-to-t from-foreground-accent-1 to-transparent lg:hidden"></div>
             </>
           )}
         </div>
