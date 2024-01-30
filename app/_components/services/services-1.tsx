@@ -9,7 +9,7 @@ interface Props {
 
 export function Services1({ title, text, items, cta }: Props) {
   return (
-    <div className="bg-grays-1 flex px-2 py-10 lg:py-10">
+    <div className="bg-foreground-primary flex px-2 py-10 lg:py-10">
       <div className="container">
         <div className="xl:flex xl:space-x-10">
           <div className="mb-10 xl:w-[35%]">
@@ -25,13 +25,12 @@ export function Services1({ title, text, items, cta }: Props) {
                 className="mb-4 flex w-full flex-col rounded-xl pr-2 last:mb-0 md:w-1/2 lg:w-1/2"
               >
                 <div className="flex items-center space-x-1">
-                  <span className="flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-black font-bold text-white">
+                  <span className="flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-primary font-bold text-secondary">
                     {++index}
                   </span>
                   <h3 className="text-lg font-bold">{item.title}</h3>
                 </div>
-                {/* TODO: Create a component */}
-                <div className="my-2 h-[1px] w-full bg-gradient-to-r from-black" />
+                <div className="my-2 h-[1px] w-full bg-gradient-to-r from-primary" />
                 <p>{item.text}</p>
               </div>
             ))}

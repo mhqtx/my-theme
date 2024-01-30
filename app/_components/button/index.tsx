@@ -22,8 +22,8 @@ export function Button({
       className={c(
         "inline-flex h-6 items-center space-x-1 truncate rounded-full px-2 font-medium",
         {
-          "bg-black text-white": variant === "primary",
-          "border border-black bg-white text-black": variant === "secondary",
+          "bg-primary text-secondary hover:bg-tertiary": variant === "primary",
+          "border border-primary text-primary": variant === "secondary",
         },
         className,
       )}

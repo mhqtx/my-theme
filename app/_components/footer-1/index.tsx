@@ -24,7 +24,7 @@ export function Footer1({
   brandName,
 }: Props) {
   return (
-    <footer className="w-full bg-black px-2 py-2 text-sm text-white lg:py-10">
+    <footer className="w-full bg-primary px-2 py-2 text-sm text-secondary lg:py-10">
       <div className="container">
         <div className="flex w-full flex-col space-y-4 lg:flex-row lg:space-x-4 lg:space-y-0">
           <section className="w-full lg:max-w-[400px]">

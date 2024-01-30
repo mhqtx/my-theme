@@ -1,14 +1,14 @@
 import { ComponentPropsWithoutRef } from "react";
 
-import { Hero1 } from "@/app/_components/hero/hero-1";
-import { Gallery1 } from "@/app/_components/gallery-1";
+import { Hero1 } from "@/app/_components/hero";
+import { About1 } from "@/app/_components/about";
+import { CallToAction1 } from "@/app/_components/call-to-action";
 import { Footer1 } from "@/app/_components/footer-1";
+import { Gallery1 } from "@/app/_components/gallery-1";
 import { Services1 } from "@/app/_components/services";
-import { CallToAction1 } from "@/app/_components/call-to-action/call-to-action-1";
 import { Location1 } from "@/app/_components/location-1";
 import { useContent } from "@/app/_hooks/use-content";
 import { Button } from "@/app/_components/button";
-import { About1 } from "@/app/_components/about-1";
 import Socials from "@/app/_components/socials";
 
 export default async function Home() {
@@ -135,7 +135,6 @@ export default async function Home() {
         }}
       />
       <CallToAction1
-        className="bg-[#ffe2ff]"
         title={
           <strong className="font-bold">
             Unleash the Power of Our Social Presence

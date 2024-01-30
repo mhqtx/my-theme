@@ -2,21 +2,39 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+/* TODO: https://medium.com/digio-australia/a-scalable-naming-convention-for-style-variables-6363b916432a#:~:text=Variables%20should%20be%20semantic%20in,facets%20of%20an%20application%20theme. */
+/* TODO: vars https://www.youtube.com/watch?v=WTchW0LdWL0&ab_channel=CodinginPublic */
+@layer base {
+  :root {
+    --color-primary: 0 0 0;
+    --color-secondary: 255 255 255;
+    --color-tertiary: 43 43 43;
+
+    --color-foreground-primary: 255 255 255;
+
+    /* TODO: Could this be ternary or secondary?? and white just... white? */
+    --color-foreground-accent-1: 132 255 208;
+  }
+}
+
+html,
+body {
+  color: var(--color-tertiary);
+  background-color: var(--color-foreground);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --foreground-rgb: 0, 0, 0;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+    --color-primary: 255 255 255;
+    --color-secondary: 0 0 0;
+    --color-tertiary: 43 43 43;
+
+    --color-foreground-primary: 0 0 0;
+    --color-foreground-about: 100 255 241;
   }
 }
 
-body {
+/* body {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
       to bottom,
@@ -24,12 +42,7 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
-}
-
-.bg-effect {
-  background-size: "32px 32px";
-  background-image: "radial-gradient(#a9a9a9 1px, #ffffff 1px)";
-}
+} */
 
 /* TODO: Investigate */
 .container-half {

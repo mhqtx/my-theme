@@ -14,7 +14,7 @@ export function About1({ title, description }: Props) {
   const [textExpanded, setTextExpanded] = useState(false);
 
   return (
-    <section className="bg-[#d9fff1] px-2 py-10">
+    <section className="bg-foreground-accent-1 px-2 py-10">
       <div className="container">
         <h2 className="mb-3 text-3xl font-bold lg:w-1/2">{title}</h2>
         <div
@@ -25,7 +25,7 @@ export function About1({ title, description }: Props) {
           <div className="mb-2 space-y-2 text-lg">{description}</div>
           {!textExpanded && (
             <>
-              <div className="absolute bottom-0 left-0 h-[180px] w-full bg-gradient-to-t from-[#d9fff1] to-transparent lg:hidden"></div>
+              <div className="from-foreground-about absolute bottom-0 left-0 h-[180px] w-full bg-gradient-to-t to-transparent lg:hidden"></div>
             </>
           )}
         </div>

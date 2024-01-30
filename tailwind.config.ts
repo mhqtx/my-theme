@@ -1,4 +1,5 @@
 import type { Config } from "tailwindcss";
+
 const { nextui } = require("@nextui-org/react");
 
 const config: Config = {
@@ -28,6 +29,15 @@ const config: Config = {
         "5": "40px 40px",
       },
       colors: {
+        foreground: {
+          primary: "rgb(var(--color-foreground-primary) / 1)",
+          ["accent-1"]: "rgb(var(--color-foreground-accent-1) / 1)",
+          ["accent-2"]: "rgb(var(--color-foreground-accent-2) / 1)",
+        },
+        primary: "rgb(var(--color-primary) / 1)",
+        secondary: "rgb(var(--color-secondary) / 1)",
+        tertiary: "rgb(var(--color-tertiary) / 1)",
+
         main: "#faf0e6",
         grays: {
           1: "#f7f7f7",
