@@ -23,7 +23,7 @@ body {
   background-color: var(--color-foreground);
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   :root {
     --color-primary: 255 255 255;
     --color-secondary: 0 0 0;
@@ -32,7 +32,7 @@ body {
     --color-foreground-primary: 0 0 0;
     --color-foreground-about: 100 255 241;
   }
-}
+} */
 
 /* body {
   color: rgb(var(--foreground-rgb));
