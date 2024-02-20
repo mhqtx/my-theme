@@ -11,6 +11,14 @@ import { useContent } from "@/app/_hooks/use-content";
 import { Button } from "@/app/_components/button";
 import Socials from "@/app/_components/socials";
 
+// TODO: List
+// 1. Nav dropdown font size, separator, phone?
+// 2. Background effects on absolutely positioned div
+// 3. Gallery, for v1 turn off video and use only images with slick instead of swiper (try to use scrollable content slider)
+// 4. For cta component, let user define max width (it's too wide for the socials)
+// 5. For services, add like a banner photo on top and remove cta
+// 6. Contact, just captions make big
+// 7. Reorganize footer, make some more spaces
 export default async function Home() {
   const {
     // Hero
