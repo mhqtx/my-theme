@@ -39,12 +39,35 @@ export default async function Home() {
   return (
     <>
       <Hero1
-        title={title}
-        description={description}
+        title="Ostvari pun potencijal prisustva na mreži i unapredi svoje poslovanje na viši nivo"
+        description="Elegantne i jednostavne teme. Unapred pripremljene i prilagođene za mala preduzeća. Kreirane od strane vrhunskih veb programera uz upotrebu najnovijih tehnologija. Dizajnirane s ljubavlju. Pristupačne za svakog."
         cta={
           <>
-            <Button>Buy $29/month</Button>
-            <Button variant="secondary">Read more</Button>
+            <div className="flex flex-col items-center">
+              <Button>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth={1.5}
+                  stroke="currentColor"
+                  className="size-3"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75"
+                  />
+                </svg>
+                <span>Kupi za 899 RSD</span>
+              </Button>
+              <span className="mt-1 text-center text-xs font-medium">
+                Na mesečnom nivou.
+                <br />
+                Otkaži bilo kada.
+              </span>
+            </div>
+            <Button variant="secondary">Pročitaj više</Button>
           </>
         }
         media={

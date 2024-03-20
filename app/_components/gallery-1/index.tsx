@@ -1,6 +1,11 @@
 "use client";
 
+// Import css files
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+
 import Image from "next/image";
+import Slider from "react-slick";
 
 import { Swiper, SwiperSlide } from "@/app/_components/swiper";
 import { Button } from "@/app/_components/button";
@@ -14,16 +19,54 @@ interface Props {
 }
 
 export function Gallery1({ section1, section2, items }: Props) {
+  const settings = {
+    dots: false,
+    infinite: true,
+    autoplay: true,
+    slidesToScroll: 1,
+    variableWidth: true,
+    cssEase: "linear",
+    autoplaySpeed: 0,
+    speed: 10000,
+    pauseOnHover: false,
+    // slidesToShow: 1,
+  };
+
   return (
-    <section className="bg-foreground-primary px-2 py-10">
-      <div className="container">
+    <section className="bg-foreground-primary py-10">
+      <div className="container px-2">
         <div className="lg:w-1/2">
           <h2 className="text-3xl font-bold">{section1.title}</h2>
           <p className="mt-3 text-lg md:text-xl">{section1.text}</p>
         </div>
       </div>
 
-      <Swiper className="my-4 lg:my-8">
+      <Slider {...settings} className="my-4 w-full">
+        {items.map((item, index) => (
+          <div
+            className="relative mx-2 h-[489px] w-[275px] overflow-hidden rounded-xl bg-red-50"
+            key={index}
+          >
+            <video
+              width="100%"
+              height="100%"
+              className={`pointer-esvents-none rounded-xl video-${index}`}
+              loop
+              muted
+              preload="metadata"
+              playsInline
+            >
+              <source src={item.src} type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+            <div className="absolute top-0 w-full rounded-tl-xl rounded-tr-xl bg-gradient-to-b from-black/50 to-transparent p-2 pb-[50%] text-left text-white">
+              <h6 className="font-medium">{item.title}</h6>
+            </div>
+          </div>
+        ))}
+      </Slider>
+
+      {/* <Swiper className="my-4 lg:my-8">
         {items.map((item, index) => (
           <SwiperSlide key={index} className="!w-fit">
             <div className="relative h-[489px] w-[275px] overflow-hidden rounded-xl bg-red-50">
@@ -85,9 +128,9 @@ export function Gallery1({ section1, section2, items }: Props) {
             </div>
           </SwiperSlide>
         ))}
-      </Swiper>
+      </Swiper> */}
 
-      <div className="container">
+      <div className="container px-2">
         <div className="lg:w-1/2">
           <h3 className="mb-1 text-2xl font-bold">{section2.title}</h3>
           <p className="mb-3">{section2.text}</p>

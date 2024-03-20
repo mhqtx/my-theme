@@ -13,9 +13,9 @@ export function useContent() {
     },
     name: "Estro",
     title:
-      "Unlock Your Business Potential & Enjoy the Benefits of a Dynamic Online Presence",
+      "Otključajte poslovni potencijal i uživajte u prednostima prisustva na mreži",
     description:
-      "Empower your small business with a sleek online presence at a fraction of the cost. Budget-friendly, professional websites tailored for small businesses. Elevate your brand effortlessly in the digital world.",
+      "Osnažite svoje preduzeće uz elegantno online prisustvo po povoljnim cenama. Podignite svoj brend na viši nivo uz  minimalno truda. Gotove teme prilagodjene vašim potrebama.",
     ctaButton: {
       text: "Read more",
       href: "https://letmegooglethat.com/?q=why+do+I+need+a+website+for+my+business%3F",

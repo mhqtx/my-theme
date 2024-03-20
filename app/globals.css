@@ -75,3 +75,7 @@ body {
     max-width: 768px;
   }
 }
+
+.slick-track > div {
+  @apply mx-1 w-[276px];
+}
