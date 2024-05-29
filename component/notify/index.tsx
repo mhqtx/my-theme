@@ -1,14 +1,6 @@
 "use client";
 
-import c from "clsx";
-import Image from "next/image";
-import { useEffect, useRef, useState } from "react";
-import { motion, useScroll } from "framer-motion";
-
-import { useContent } from "@/app/_hooks/use-content";
-import Dropdown from "@/app/_components/nav/dropdown";
-import Socials from "@/app/_components/socials";
-import { Button } from "@/app/_components/button";
+import { useState } from "react";
 
 export function Notify() {
   const [show, setShow] = useState(true);

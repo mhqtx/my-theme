@@ -4,7 +4,7 @@ import { twMerge } from "tailwind-merge";
 import Image from "next/image";
 import { motion } from "framer-motion";
 
-import { useContent } from "@/app/_hooks/use-content";
+import { useContent } from "@hook/use-content";
 
 interface Props {
   iconWrapperClassName?: string;

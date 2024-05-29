@@ -1,11 +1,9 @@
 "use client";
 
 import { useEffect } from "react";
-import Image from "next/image";
 
-import { Hamburger } from "@/app/_icons";
-import { useContent } from "@/app/_hooks/use-content";
-import Socials from "@/app/_components/socials";
+import { useContent } from "@hook/use-content";
+import Socials from "@component/socials";
 
 interface Props {
   onClose: () => void;

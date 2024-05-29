@@ -5,9 +5,8 @@ import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
 import { motion, useScroll } from "framer-motion";
 
-import { useContent } from "@/app/_hooks/use-content";
-import Dropdown from "@/app/_components/nav/dropdown";
-import Socials from "@/app/_components/socials";
+import Dropdown from "@component/nav/dropdown";
+import { useContent } from "@hook/use-content";
 
 // TODO: Use https://eu.louisvuitton.com/eng-e1/point-of-sale/austria/louis-vuitton-vienne
 export default function Nav() {
@@ -96,13 +95,13 @@ export default function Nav() {
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
                   viewBox="0 0 24 24"
-                  stroke-width="1.5"
+                  strokeWidth="1.5"
                   stroke="currentColor"
                   className="h-3 w-3"
                 >
                   <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
                     d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
                   />
                 </svg>

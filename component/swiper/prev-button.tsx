@@ -1,11 +1,6 @@
 import c from "clsx";
-import Image from "next/image";
 
-import {
-  prevElClassName,
-  gradientElClassName,
-  navigationElClassName,
-} from "@/app/_components/swiper";
+import { prevElClassName, navigationElClassName } from "@component/swiper";
 
 export function PrevButton() {
   return (

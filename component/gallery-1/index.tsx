@@ -4,11 +4,9 @@
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-import Image from "next/image";
 import Slider from "react-slick";
 
-import { Swiper, SwiperSlide } from "@/app/_components/swiper";
-import { Button } from "@/app/_components/button";
+import { Button } from "@component/button";
 
 type Section = { title: string; text: string };
 

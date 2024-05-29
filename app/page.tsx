@@ -1,15 +1,22 @@
 import { ComponentPropsWithoutRef } from "react";
+import { About1 } from "@component/about";
+import { CallToAction1 } from "@component/call-to-action";
+import { Footer1 } from "@component/footer-1";
+import { Gallery1 } from "@component/gallery-1";
+import { Services1 } from "@component/services";
+import { Location1 } from "@component/location-1";
+import { useContent } from "@hook/use-content";
+import { Button } from "@component/button";
+import Socials from "@component/socials";
+import { Hero1 } from "@component/hero";
 
-import { Hero1 } from "@/app/_components/hero";
-import { About1 } from "@/app/_components/about";
-import { CallToAction1 } from "@/app/_components/call-to-action";
-import { Footer1 } from "@/app/_components/footer-1";
-import { Gallery1 } from "@/app/_components/gallery-1";
-import { Services1 } from "@/app/_components/services";
-import { Location1 } from "@/app/_components/location-1";
-import { useContent } from "@/app/_hooks/use-content";
-import { Button } from "@/app/_components/button";
-import Socials from "@/app/_components/socials";
+async function getHeroData() {
+  const results = await fetch(
+    `${process.env.NEXT_PUBLIC_API_URL}/api/hero`,
+  ).then((x) => x.json());
+
+  return results;
+}
 
 // TODO: List
 // 1. Nav dropdown font size, separator, phone?
@@ -20,6 +27,8 @@ import Socials from "@/app/_components/socials";
 // 6. Contact, just captions make big
 // 7. Reorganize footer, make some more spaces
 export default async function Home() {
+  const r = await getHeroData();
+
   const {
     // Hero
     title,
@@ -36,10 +45,12 @@ export default async function Home() {
     workingHours,
   } = useContent();
 
+  // return <BlocksRenderer content={r?.data?.attributes?.description} />;
+
   return (
     <>
       <Hero1
-        title="Ostvari pun potencijal prisustva na mreži i unapredi svoje poslovanje na viši nivo"
+        title={r?.data?.attributes?.title}
         description="Elegantne i jednostavne teme. Unapred pripremljene i prilagođene za mala preduzeća. Kreirane od strane vrhunskih veb programera uz upotrebu najnovijih tehnologija. Dizajnirane s ljubavlju. Pristupačne za svakog."
         cta={
           <>

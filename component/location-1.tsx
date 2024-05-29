@@ -1,5 +1,5 @@
-import { Button } from "@/app/_components/button";
-import { useContent } from "@/app/_hooks/use-content";
+import { useContent } from "@hook/use-content";
+import { Button } from "@component/button";
 
 export function Location1() {
   const { workingHours } = useContent();

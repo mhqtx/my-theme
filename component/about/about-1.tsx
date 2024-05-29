@@ -3,7 +3,7 @@
 import c from "clsx";
 import { useState } from "react";
 
-import { Button } from "@/app/_components/button";
+import { Button } from "@component/button";
 
 interface Props {
   title: string;

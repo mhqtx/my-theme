@@ -8,6 +8,7 @@
     "start": "next start",
     "lint": "next lint"
   },
+  "proxy": "http://localhost:1337/",
   "dependencies": {
     "@ant-design/icons": "^5.2.6",
     "@nextui-org/button": "^2.0.26",
@@ -15,6 +16,7 @@
     "@nextui-org/system": "^2.0.15",
     "@nextui-org/theme": "^2.1.17",
     "@prisma/client": "^5.8.0",
+    "@strapi/blocks-react-renderer": "^1.0.1",
     "clsx": "^2.1.0",
     "framer-motion": "^10.18.0",
     "next": "14.0.4",

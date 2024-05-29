@@ -1,4 +1,4 @@
-import Socials from "@/app/_components/socials";
+import Socials from "@component/socials";
 
 interface Props {
   title: string;

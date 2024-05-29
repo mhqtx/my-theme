@@ -1,4 +1,4 @@
-import { Instagram, Phone, Viber, Whatsapp } from "@/app/_icons";
+import { Instagram, Phone, Viber, Whatsapp } from "@icon";
 
 export function useContent() {
   return {
