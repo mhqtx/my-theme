@@ -24,7 +24,6 @@ export default function Socials({ iconWrapperClassName }: Props) {
           key={icon.src}
           target="_blank"
           rel="noopener noreferrer"
-          // TODO: Use twMerge
           className={twMerge(
             "flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-black",
             iconWrapperClassName,

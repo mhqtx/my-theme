@@ -1,5 +1,3 @@
-"use client";
-
 import { ReactNode } from "react";
 
 interface Props {
@@ -11,7 +9,7 @@ interface Props {
 
 export function Hero1({ title, description, cta, media }: Props) {
   return (
-    <section className="flex h-screen w-full flex-col bg-foreground bg-5 p-2 px-2 lg:p-12">
+    <section className="bg-foreground flex h-screen w-full flex-col bg-5 p-2 px-2 lg:p-12">
       <div className="container flex h-full">
         <div className="flex w-full flex-col items-center justify-center lg:w-1/2 lg:pr-4 xl:pr-8">
           <div>
