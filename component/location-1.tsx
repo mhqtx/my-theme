@@ -5,7 +5,7 @@ export function Location1() {
   const { workingHours } = useContent();
 
   return (
-    <div className="flex flex-col bg-white lg:flex-row">
+    <div id="location1" className="flex flex-col bg-white lg:flex-row">
       <div className="order-1 w-full lg:w-1/2">
         <div className="container-half p-2 lg:mx-0 lg:p-10 lg:px-10">
           <div className="mb-10">

@@ -31,7 +31,7 @@ export function Gallery1({ section1, section2, items }: Props) {
   };
 
   return (
-    <section className="bg-foreground-primary py-10">
+    <section id="gallery1" className="bg-foreground-primary py-10">
       <div className="container px-2">
         <div className="lg:w-1/2">
           <h2 className="text-3xl font-bold">{section1.title}</h2>

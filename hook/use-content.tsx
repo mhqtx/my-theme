@@ -146,11 +146,6 @@ export function useContent() {
     },
     socials: [
       {
-        src: Instagram,
-        alt: "Instagram",
-        href: "http://www.instagram.com/hilan.makaj",
-      },
-      {
         alt: "Whatsapp",
         src: Whatsapp,
         href: "https://api.whatsapp.com/send?phone=+381629630157",
@@ -207,11 +202,13 @@ export function useContent() {
     },
     menu: {
       items: [
-        "Home",
-        "Services",
-        "Social media content",
-        "Location",
-        "Contact",
+        {
+          text: "Home",
+          href: "hero1",
+        },
+        { text: "Services", href: "services1" },
+        { text: "Social media content", href: "gallery1" },
+        { text: "Location", href: "location1" },
       ],
     },
   };

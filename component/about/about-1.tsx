@@ -14,7 +14,11 @@ export function About1({ title, description, ...rest }: Props) {
   const [textExpanded, setTextExpanded] = useState(false);
 
   return (
-    <section className="bg-foreground-accent-1 px-2 py-10" {...rest}>
+    <section
+      id="about1"
+      className="bg-foreground-accent-1 px-2 py-10"
+      {...rest}
+    >
       <div className="container">
         <h2 className="mb-3 text-3xl font-bold lg:w-1/2">{title}</h2>
         <div

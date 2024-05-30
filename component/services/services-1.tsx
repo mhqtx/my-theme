@@ -9,7 +9,10 @@ interface Props {
 
 export function Services1({ title, text, items, cta }: Props) {
   return (
-    <div className="flex bg-foreground-primary px-2 py-10 lg:py-10">
+    <div
+      id="services1"
+      className="flex bg-foreground-primary px-2 py-10 lg:py-10"
+    >
       <div className="container">
         <div className="xl:flex xl:space-x-10">
           <div className="mb-10 xl:w-[35%]">
