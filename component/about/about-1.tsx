@@ -19,7 +19,7 @@ export function About1({ title, description, ...rest }: Props) {
       className="bg-foreground-accent-1 px-2 py-10"
       {...rest}
     >
-      <div className="container">
+      <div className="animation-reveal container">
         <h2 className="mb-3 text-3xl font-bold lg:w-1/2">{title}</h2>
         <div
           className={c("relative gap-x-8 overflow-hidden lg:columns-2", {

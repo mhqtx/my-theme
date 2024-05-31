@@ -13,7 +13,7 @@ export function Services1({ title, text, items, cta }: Props) {
       id="services1"
       className="flex bg-foreground-primary px-2 py-10 lg:py-10"
     >
-      <div className="container">
+      <div className="animation-reveal container">
         <div className="xl:flex xl:space-x-10">
           <div className="mb-10 xl:w-[35%]">
             {/* TODO: Add photo here? */}

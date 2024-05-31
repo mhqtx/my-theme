@@ -34,12 +34,12 @@ export default function Dropdown({ onClose }: Props) {
             <div className="mb-4 flex flex-col">
               {menuItems.map((item) => (
                 <a
-                  href="#"
-                  key={item}
+                  href={item.href}
+                  key={item.text}
                   className="mb-0.5 w-full text-sm hover:text-[#fe8484]"
                   onClick={onClose}
                 >
-                  {item}
+                  {item.text}
                 </a>
               ))}
             </div>

@@ -21,7 +21,7 @@ export function CallToAction1({
       id="callToAction1"
       className={twMerge("w-full bg-foreground-accent-1 px-2 py-10", className)}
     >
-      <div className="container text-center lg:w-1/2">
+      <div className="animation-reveal container text-center lg:w-1/2">
         {icon && (
           <span className="mx-auto flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-primary text-3xl font-bold text-secondary text-white">
             {icon}

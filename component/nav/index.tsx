@@ -3,16 +3,12 @@
 import c from "clsx";
 import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
-import { motion, useScroll } from "framer-motion";
 
 import Dropdown from "@component/nav/dropdown";
-import { useContent } from "@hook/use-content";
 
 // TODO: Use https://eu.louisvuitton.com/eng-e1/point-of-sale/austria/louis-vuitton-vienne
 export default function Nav() {
   const ref = useRef<HTMLDivElement>(null);
-  const { owner, tel } = useContent();
-  const { scrollYProgress } = useScroll();
 
   const [isScrolledDown, setIsScrolledDown] = useState(false);
   const [isDropdownOpened, setIsDropdownOpened] = useState(false);
@@ -26,13 +22,7 @@ export default function Nav() {
   return (
     // TODO: Add bg color as soon as user scrolls down
     <>
-      <motion.div
-        className="fixed left-0 top-0 z-40 h-[2px] w-full bg-black"
-        style={{
-          scaleX: scrollYProgress,
-          transformOrigin: 0,
-        }}
-      />
+      <div className="animation-progress fixed z-40 h-0.5 w-10 bg-black" />
       {isDropdownOpened && (
         <Dropdown onClose={() => setIsDropdownOpened(false)} />
       )}

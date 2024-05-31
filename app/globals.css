@@ -79,3 +79,36 @@ body {
 .slick-track > div {
   @apply mx-1 w-[276px];
 }
+
+/* TODO: Revisit, move to tailwind animations */
+@keyframes grow-progress {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes reveal {
+  from {
+    opacity: 0;
+    transform: scaleX(0.9);
+  }
+
+  50% {
+    opacity: 1;
+    transform: scaleX(1);
+  }
+}
+
+.animation-progress {
+  animation: grow-progress linear forwards;
+  animation-timeline: scroll();
+}
+
+.animation-reveal {
+  animation: reveal linear both;
+  animation-timeline: view();
+  animation-range: cover;
+}
