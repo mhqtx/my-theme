@@ -102,6 +102,7 @@ body {
   }
 }
 
+/* SEE: https://www.youtube.com/watch?v=4AvL5Jbd8QU&list=PLNYkxOF6rcICM3ttukz9x5LCNOHfWBVnn&index=6&ab_channel=ChromeforDevelopers */
 .animation-progress {
   animation: grow-progress linear forwards;
   animation-timeline: scroll();
